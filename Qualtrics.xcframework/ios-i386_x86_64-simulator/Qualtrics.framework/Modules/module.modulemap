@@ -1,0 +1,4 @@
+framework module Qualtrics {
+  header "Qualtrics-Swift.h"
+  requires objc
+}
