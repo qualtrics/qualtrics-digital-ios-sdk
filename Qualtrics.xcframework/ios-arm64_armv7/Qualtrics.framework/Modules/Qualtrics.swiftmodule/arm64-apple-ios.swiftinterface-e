@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name Qualtrics
 import CommonCrypto
 import Foundation
@@ -8,17 +8,17 @@ import Swift
 import UIKit
 import UserNotifications
 import WebKit
+import _Concurrency
 @_inheritsConvenienceInitializers @objc public class QualtricsProperties : ObjectiveC.NSObject {
   @objc public func setString(string: Swift.String, for key: Swift.String)
   @objc public func setNumber(number: Swift.Double, for key: Swift.String)
   @objc public func setDateTime(for key: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class TargetingResultError : ObjectiveC.NSObject, Swift.Error {
   public static func == (this: Qualtrics.TargetingResultError, comparison: Qualtrics.TargetingResultError) -> Swift.Bool
   @objc deinit
-  @objc override dynamic public init()
 }
 @_hasMissingDesignatedInitializers @objc public class TargetingResult : ObjectiveC.NSObject {
   @objc public func getSurveyUrl() -> Swift.String?
@@ -30,18 +30,17 @@ import WebKit
   @objc public func recordImpression()
   @objc public func recordClick()
   @objc deinit
-  @objc override dynamic public init()
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Qualtrics : ObjectiveC.NSObject {
   @objc public static let shared: Qualtrics.Qualtrics
   @objc final public let properties: Qualtrics.QualtricsProperties
   @available(*, deprecated, message: "This is being removed; please migrate to initializeProject.")
-  @objc public func initialize(brandId: Swift.String, zoneId: Swift.String, interceptId: Swift.String, completion: ((Qualtrics.InitializationResult) -> Swift.Void)? = nil)
-  @objc public func initializeProject(brandId: Swift.String, projectId: Swift.String, extRefId: Swift.String? = nil, completion: (([Swift.String : Qualtrics.InitializationResult]) -> Swift.Void)? = nil)
+  @objc public func initialize(brandId: Swift.String, zoneId: Swift.String, interceptId: Swift.String, completion: ((_ InitializationResult: Qualtrics.InitializationResult) -> Swift.Void)? = nil)
+  @objc public func initializeProject(brandId: Swift.String, projectId: Swift.String, extRefId: Swift.String? = nil, completion: ((_ InitializationResults: [Swift.String : Qualtrics.InitializationResult]) -> Swift.Void)? = nil)
   @available(*, deprecated, message: "This is being removed; please migrate to evaluateProject or evaluateIntercept.")
-  @objc public func evaluateTargetingLogic(completion: @escaping ((Qualtrics.TargetingResult) -> Swift.Void))
-  @objc public func evaluateProject(completion: @escaping (([Swift.String : Qualtrics.TargetingResult]) -> Swift.Void))
-  @objc public func evaluateIntercept(for interceptId: Swift.String, completion: @escaping ((Qualtrics.TargetingResult) -> Swift.Void))
+  @objc public func evaluateTargetingLogic(completion: @escaping ((_ targetingResult: Qualtrics.TargetingResult) -> Swift.Void))
+  @objc public func evaluateProject(completion: @escaping ((_ targetingResults: [Swift.String : Qualtrics.TargetingResult]) -> Swift.Void))
+  @objc public func evaluateIntercept(for interceptId: Swift.String, completion: @escaping ((_ targetingResult: Qualtrics.TargetingResult) -> Swift.Void))
   @available(iOS 10.0, *)
   @objc public func handleLocalNotification(response: UserNotifications.UNNotificationResponse, displayOn viewController: UIKit.UIViewController) -> Swift.Bool
   @objc public func handleLocalNotification(_ notification: UIKit.UILocalNotification, displayOn viewController: UIKit.UIViewController) -> Swift.Bool
@@ -60,28 +59,26 @@ import WebKit
   case Notification
   case PopOver
   case EmbeddedFeedback
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-extension Decodable {
+extension Swift.Decodable {
   public func getAlignment(Alignment: Swift.String) -> UIKit.NSTextAlignment
 }
-@_hasMissingDesignatedInitializers @objc final public class QualtricsSurveyViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler {
-  @objc public init(url: Swift.String, autoCloseSurvey: Foundation.NSNumber? = false)
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc override final public func viewDidAppear(_ animated: Swift.Bool)
-  @objc override final public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
-  @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class QualtricsSurveyViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler {
+  @objc @_Concurrency.MainActor(unsafe) public init(url: Swift.String, autoCloseSurvey: Foundation.NSNumber? = false)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class InitializationResult : ObjectiveC.NSObject {
   @objc public func getMessage() -> Swift.String?
   @objc public func passed() -> Swift.Bool
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum targetingResultStatus : Swift.Int {
@@ -95,8 +92,8 @@ extension Decodable {
   public var name: Swift.String {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
