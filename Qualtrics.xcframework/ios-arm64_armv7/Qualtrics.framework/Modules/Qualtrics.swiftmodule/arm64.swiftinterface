@@ -53,6 +53,7 @@ import _Concurrency
   @objc public func registerViewVisit(viewName: Swift.String)
   @objc public func resetTimer()
   @objc public func resetViewCounter()
+  @objc public func getQualtricsContactId(interceptId: Swift.String) -> Swift.String?
   @objc deinit
 }
 @objc public enum CreativeType : Swift.Int {

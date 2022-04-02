@@ -258,6 +258,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * 
 - (void)registerViewVisitWithViewName:(NSString * _Nonnull)viewName;
 - (void)resetTimer;
 - (void)resetViewCounter;
+/// Returns the q_touchpoint value for the given intercept
+/// If the given intercept has not been initialized and evaluated, this function will return a nil value.
+- (NSString * _Nullable)getQualtricsContactIdWithInterceptId:(NSString * _Nonnull)interceptId SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -588,6 +591,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * 
 - (void)registerViewVisitWithViewName:(NSString * _Nonnull)viewName;
 - (void)resetTimer;
 - (void)resetViewCounter;
+/// Returns the q_touchpoint value for the given intercept
+/// If the given intercept has not been initialized and evaluated, this function will return a nil value.
+- (NSString * _Nullable)getQualtricsContactIdWithInterceptId:(NSString * _Nonnull)interceptId SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
