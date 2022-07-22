@@ -9,6 +9,13 @@ import UIKit
 import UserNotifications
 import WebKit
 import _Concurrency
+@_hasMissingDesignatedInitializers @objc public class QualtricsWebviewTheme : ObjectiveC.NSObject {
+  public func getCloseButtonImage() -> UIKit.UIImage?
+  public func setCloseButtonImage(closeButtonImage: UIKit.UIImage?)
+  public func getTopBarBackgroundColor() -> UIKit.UIColor
+  public func setTopBarBackgroundColor(topBarBackgroundColor: UIKit.UIColor)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class QualtricsProperties : ObjectiveC.NSObject {
   @objc public func setString(string: Swift.String, for key: Swift.String)
   @objc public func setNumber(number: Swift.Double, for key: Swift.String)
@@ -34,6 +41,7 @@ import _Concurrency
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Qualtrics : ObjectiveC.NSObject {
   @objc public static let shared: Qualtrics.Qualtrics
   @objc final public let properties: Qualtrics.QualtricsProperties
+  @objc public var webviewTheme: Qualtrics.QualtricsWebviewTheme
   @available(*, deprecated, message: "This is being removed; please migrate to initializeProject.")
   @objc public func initialize(brandId: Swift.String, zoneId: Swift.String, interceptId: Swift.String, completion: ((_ InitializationResult: Qualtrics.InitializationResult) -> Swift.Void)? = nil)
   @objc public func initializeProject(brandId: Swift.String, projectId: Swift.String, extRefId: Swift.String? = nil, completion: ((_ InitializationResults: [Swift.String : Qualtrics.InitializationResult]) -> Swift.Void)? = nil)
@@ -49,6 +57,7 @@ import _Concurrency
   @objc public func displayTarget(targetViewController: UIKit.UIViewController, targetUrl: Swift.String, autoCloseSurvey: Foundation.NSNumber = false)
   @objc public func getInitializedIntercepts() -> [Swift.String]
   @objc public func getPassingIntercepts() -> [Swift.String]
+  @objc public func setEmbeddedFeedbackDialogCloseListener(listener: (() -> Swift.Void)?)
   @objc public func hide() -> Swift.Bool
   @objc public func registerViewVisit(viewName: Swift.String)
   @objc public func resetTimer()

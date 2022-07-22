@@ -230,6 +230,7 @@ SWIFT_CLASS("_TtC9Qualtrics20InitializationResult")
 @end
 
 @class QualtricsProperties;
+@class QualtricsWebviewTheme;
 @class TargetingResult;
 @class UNNotificationResponse;
 @class UIViewController;
@@ -240,6 +241,7 @@ SWIFT_CLASS("_TtC9Qualtrics9Qualtrics")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * _Nonnull shared;)
 + (Qualtrics * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) QualtricsProperties * _Nonnull properties;
+@property (nonatomic, strong) QualtricsWebviewTheme * _Nonnull webviewTheme;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeWithBrandId:(NSString * _Nonnull)brandId zoneId:(NSString * _Nonnull)zoneId interceptId:(NSString * _Nonnull)interceptId completion:(void (^ _Nullable)(InitializationResult * _Nonnull))completion SWIFT_DEPRECATED_MSG("This is being removed; please migrate to initializeProject.");
@@ -254,6 +256,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * 
 - (void)displayTargetWithTargetViewController:(UIViewController * _Nonnull)targetViewController targetUrl:(NSString * _Nonnull)targetUrl autoCloseSurvey:(NSNumber * _Nonnull)autoCloseSurvey;
 - (NSArray<NSString *> * _Nonnull)getInitializedIntercepts SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nonnull)getPassingIntercepts SWIFT_WARN_UNUSED_RESULT;
+- (void)setEmbeddedFeedbackDialogCloseListenerWithListener:(void (^ _Nullable)(void))listener;
 - (BOOL)hide SWIFT_WARN_UNUSED_RESULT;
 - (void)registerViewVisitWithViewName:(NSString * _Nonnull)viewName;
 - (void)resetTimer;
@@ -286,6 +289,13 @@ SWIFT_CLASS("_TtC9Qualtrics29QualtricsSurveyViewController")
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC9Qualtrics21QualtricsWebviewTheme")
+@interface QualtricsWebviewTheme : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 enum targetingResultStatus : NSInteger;
@@ -563,6 +573,7 @@ SWIFT_CLASS("_TtC9Qualtrics20InitializationResult")
 @end
 
 @class QualtricsProperties;
+@class QualtricsWebviewTheme;
 @class TargetingResult;
 @class UNNotificationResponse;
 @class UIViewController;
@@ -573,6 +584,7 @@ SWIFT_CLASS("_TtC9Qualtrics9Qualtrics")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * _Nonnull shared;)
 + (Qualtrics * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly, strong) QualtricsProperties * _Nonnull properties;
+@property (nonatomic, strong) QualtricsWebviewTheme * _Nonnull webviewTheme;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeWithBrandId:(NSString * _Nonnull)brandId zoneId:(NSString * _Nonnull)zoneId interceptId:(NSString * _Nonnull)interceptId completion:(void (^ _Nullable)(InitializationResult * _Nonnull))completion SWIFT_DEPRECATED_MSG("This is being removed; please migrate to initializeProject.");
@@ -587,6 +599,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * 
 - (void)displayTargetWithTargetViewController:(UIViewController * _Nonnull)targetViewController targetUrl:(NSString * _Nonnull)targetUrl autoCloseSurvey:(NSNumber * _Nonnull)autoCloseSurvey;
 - (NSArray<NSString *> * _Nonnull)getInitializedIntercepts SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nonnull)getPassingIntercepts SWIFT_WARN_UNUSED_RESULT;
+- (void)setEmbeddedFeedbackDialogCloseListenerWithListener:(void (^ _Nullable)(void))listener;
 - (BOOL)hide SWIFT_WARN_UNUSED_RESULT;
 - (void)registerViewVisitWithViewName:(NSString * _Nonnull)viewName;
 - (void)resetTimer;
@@ -619,6 +632,13 @@ SWIFT_CLASS("_TtC9Qualtrics29QualtricsSurveyViewController")
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC9Qualtrics21QualtricsWebviewTheme")
+@interface QualtricsWebviewTheme : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 enum targetingResultStatus : NSInteger;
