@@ -25,6 +25,8 @@ import _Concurrency
 }
 @_hasMissingDesignatedInitializers @objc public class TargetingResultError : ObjectiveC.NSObject, Swift.Error {
   public static func == (this: Qualtrics.TargetingResultError, comparison: Qualtrics.TargetingResultError) -> Swift.Bool
+  @objc public func getErrorMessage() -> Swift.String
+  @objc public func getErrorType() -> Swift.Int
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class TargetingResult : ObjectiveC.NSObject {
