@@ -5,8 +5,6 @@
 	<key>AvailableLibraries</key>
 	<array>
 		<dict>
-			<key>BitcodeSymbolMapsPath</key>
-			<string>BCSymbolMaps</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
@@ -22,18 +20,15 @@
 			<string>ios</string>
 		</dict>
 		<dict>
-			<key>BitcodeSymbolMapsPath</key>
-			<string>BCSymbolMaps</string>
 			<key>DebugSymbolsPath</key>
 			<string>dSYMs</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64_i386_x86_64-simulator</string>
+			<string>ios-arm64_x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>Qualtrics.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
-				<string>i386</string>
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
