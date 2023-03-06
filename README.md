@@ -19,5 +19,5 @@ Add a dependency on qualtrics-digital-ios-sdk to your iOS application through Xc
 #### 4. Check the box, and click “Add Package”
 ![step 4](https://github.com/qualtrics/qualtrics-digital-ios-sdk/blob/main/ReadMeFiles/step4.png?raw=true)
 
-#### 5. Make sure the package is added (for example for application `QualtricsSDKSwiftUI` it should appear on the left menu in files structures, and look as follows):
+#### 5. Verify that the package has been added to your Project Navigator in Xcode, under `Package Dependencies` (In this example, it is directly under our example app `QualtricsSDKSwiftUI`):
 ![step 5](https://github.com/qualtrics/qualtrics-digital-ios-sdk/blob/main/ReadMeFiles/step5.png?raw=true)
