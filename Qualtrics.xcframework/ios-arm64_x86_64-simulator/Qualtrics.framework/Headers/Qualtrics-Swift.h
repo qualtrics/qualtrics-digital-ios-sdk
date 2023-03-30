@@ -249,7 +249,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * 
 - (void)evaluateTargetingLogicWithCompletion:(void (^ _Nonnull)(TargetingResult * _Nonnull))completion SWIFT_DEPRECATED_MSG("This is being removed; please migrate to evaluateProject or evaluateIntercept.");
 - (void)evaluateProjectWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, TargetingResult *> * _Nonnull))completion;
 - (void)evaluateInterceptFor:(NSString * _Nonnull)interceptId completion:(void (^ _Nonnull)(TargetingResult * _Nonnull))completion;
-- (BOOL)handleLocalNotificationWithResponse:(UNNotificationResponse * _Nonnull)response displayOn:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=10.0);
+- (BOOL)handleLocalNotificationWithResponse:(UNNotificationResponse * _Nonnull)response displayOn:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)handleLocalNotification:(UILocalNotification * _Nonnull)notification displayOn:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)displayWithViewController:(UIViewController * _Nonnull)viewController autoCloseSurvey:(NSNumber * _Nonnull)autoCloseSurvey SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)displayInterceptFor:(NSString * _Nonnull)interceptID viewController:(UIViewController * _Nonnull)viewController autoCloseSurvey:(NSNumber * _Nonnull)autoCloseSurvey SWIFT_WARN_UNUSED_RESULT;
@@ -276,15 +276,20 @@ SWIFT_CLASS("_TtC9Qualtrics19QualtricsProperties")
 @end
 
 @class NSCoder;
+@class WKWebView;
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
 @protocol UIViewControllerTransitionCoordinator;
 @class WKUserContentController;
 @class WKScriptMessage;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC9Qualtrics29QualtricsSurveyViewController")
-@interface QualtricsSurveyViewController : UIViewController <WKScriptMessageHandler>
+@interface QualtricsSurveyViewController : UIViewController <WKScriptMessageHandler, WKUIDelegate>
 - (nonnull instancetype)initWithUrl:(NSString * _Nonnull)url autoCloseSurvey:(NSNumber * _Nullable)autoCloseSurvey OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
@@ -594,7 +599,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * 
 - (void)evaluateTargetingLogicWithCompletion:(void (^ _Nonnull)(TargetingResult * _Nonnull))completion SWIFT_DEPRECATED_MSG("This is being removed; please migrate to evaluateProject or evaluateIntercept.");
 - (void)evaluateProjectWithCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, TargetingResult *> * _Nonnull))completion;
 - (void)evaluateInterceptFor:(NSString * _Nonnull)interceptId completion:(void (^ _Nonnull)(TargetingResult * _Nonnull))completion;
-- (BOOL)handleLocalNotificationWithResponse:(UNNotificationResponse * _Nonnull)response displayOn:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=10.0);
+- (BOOL)handleLocalNotificationWithResponse:(UNNotificationResponse * _Nonnull)response displayOn:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)handleLocalNotification:(UILocalNotification * _Nonnull)notification displayOn:(UIViewController * _Nonnull)viewController SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)displayWithViewController:(UIViewController * _Nonnull)viewController autoCloseSurvey:(NSNumber * _Nonnull)autoCloseSurvey SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)displayInterceptFor:(NSString * _Nonnull)interceptID viewController:(UIViewController * _Nonnull)viewController autoCloseSurvey:(NSNumber * _Nonnull)autoCloseSurvey SWIFT_WARN_UNUSED_RESULT;
@@ -621,15 +626,20 @@ SWIFT_CLASS("_TtC9Qualtrics19QualtricsProperties")
 @end
 
 @class NSCoder;
+@class WKWebView;
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
 @protocol UIViewControllerTransitionCoordinator;
 @class WKUserContentController;
 @class WKScriptMessage;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC9Qualtrics29QualtricsSurveyViewController")
-@interface QualtricsSurveyViewController : UIViewController <WKScriptMessageHandler>
+@interface QualtricsSurveyViewController : UIViewController <WKScriptMessageHandler, WKUIDelegate>
 - (nonnull instancetype)initWithUrl:(NSString * _Nonnull)url autoCloseSurvey:(NSNumber * _Nullable)autoCloseSurvey OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;

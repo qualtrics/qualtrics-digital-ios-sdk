@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
-// swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name Qualtrics
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name Qualtrics
 import CommonCrypto
 import Foundation
 import StoreKit
@@ -9,6 +9,32 @@ import UIKit
 import UserNotifications
 import WebKit
 import _Concurrency
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Qualtrics : ObjectiveC.NSObject {
+  @objc public static let shared: Qualtrics
+  @objc final public let properties: QualtricsProperties
+  @objc public var webviewTheme: QualtricsWebviewTheme
+  @available(*, deprecated, message: "This is being removed; please migrate to initializeProject.")
+  @objc public func initialize(brandId: Swift.String, zoneId: Swift.String, interceptId: Swift.String, completion: ((_ InitializationResult: InitializationResult) -> Swift.Void)? = nil)
+  @objc public func initializeProject(brandId: Swift.String, projectId: Swift.String, extRefId: Swift.String? = nil, completion: ((_ InitializationResults: [Swift.String : InitializationResult]) -> Swift.Void)? = nil)
+  @available(*, deprecated, message: "This is being removed; please migrate to evaluateProject or evaluateIntercept.")
+  @objc public func evaluateTargetingLogic(completion: @escaping ((_ targetingResult: TargetingResult) -> Swift.Void))
+  @objc public func evaluateProject(completion: @escaping ((_ targetingResults: [Swift.String : TargetingResult]) -> Swift.Void))
+  @objc public func evaluateIntercept(for interceptId: Swift.String, completion: @escaping ((_ targetingResult: TargetingResult) -> Swift.Void))
+  @objc public func handleLocalNotification(response: UserNotifications.UNNotificationResponse, displayOn viewController: UIKit.UIViewController) -> Swift.Bool
+  @objc public func handleLocalNotification(_ notification: UIKit.UILocalNotification, displayOn viewController: UIKit.UIViewController) -> Swift.Bool
+  @objc public func display(viewController: UIKit.UIViewController, autoCloseSurvey: Foundation.NSNumber = false) -> Swift.Bool
+  @objc public func displayIntercept(for interceptID: Swift.String, viewController: UIKit.UIViewController, autoCloseSurvey: Foundation.NSNumber = false) -> Swift.Bool
+  @objc public func displayTarget(targetViewController: UIKit.UIViewController, targetUrl: Swift.String, autoCloseSurvey: Foundation.NSNumber = false)
+  @objc public func getInitializedIntercepts() -> [Swift.String]
+  @objc public func getPassingIntercepts() -> [Swift.String]
+  @objc public func setEmbeddedFeedbackDialogCloseListener(listener: (() -> Swift.Void)?)
+  @objc public func hide() -> Swift.Bool
+  @objc public func registerViewVisit(viewName: Swift.String)
+  @objc public func resetTimer()
+  @objc public func resetViewCounter()
+  @objc public func getQualtricsContactId(interceptId: Swift.String) -> Swift.String?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class QualtricsWebviewTheme : ObjectiveC.NSObject {
   public func getCloseButtonImage() -> UIKit.UIImage?
   public func setCloseButtonImage(closeButtonImage: UIKit.UIImage?)
@@ -40,33 +66,6 @@ import _Concurrency
   @objc public func recordClick()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Qualtrics : ObjectiveC.NSObject {
-  @objc public static let shared: Qualtrics
-  @objc final public let properties: QualtricsProperties
-  @objc public var webviewTheme: QualtricsWebviewTheme
-  @available(*, deprecated, message: "This is being removed; please migrate to initializeProject.")
-  @objc public func initialize(brandId: Swift.String, zoneId: Swift.String, interceptId: Swift.String, completion: ((_ InitializationResult: InitializationResult) -> Swift.Void)? = nil)
-  @objc public func initializeProject(brandId: Swift.String, projectId: Swift.String, extRefId: Swift.String? = nil, completion: ((_ InitializationResults: [Swift.String : InitializationResult]) -> Swift.Void)? = nil)
-  @available(*, deprecated, message: "This is being removed; please migrate to evaluateProject or evaluateIntercept.")
-  @objc public func evaluateTargetingLogic(completion: @escaping ((_ targetingResult: TargetingResult) -> Swift.Void))
-  @objc public func evaluateProject(completion: @escaping ((_ targetingResults: [Swift.String : TargetingResult]) -> Swift.Void))
-  @objc public func evaluateIntercept(for interceptId: Swift.String, completion: @escaping ((_ targetingResult: TargetingResult) -> Swift.Void))
-  @available(iOS 10.0, *)
-  @objc public func handleLocalNotification(response: UserNotifications.UNNotificationResponse, displayOn viewController: UIKit.UIViewController) -> Swift.Bool
-  @objc public func handleLocalNotification(_ notification: UIKit.UILocalNotification, displayOn viewController: UIKit.UIViewController) -> Swift.Bool
-  @objc public func display(viewController: UIKit.UIViewController, autoCloseSurvey: Foundation.NSNumber = false) -> Swift.Bool
-  @objc public func displayIntercept(for interceptID: Swift.String, viewController: UIKit.UIViewController, autoCloseSurvey: Foundation.NSNumber = false) -> Swift.Bool
-  @objc public func displayTarget(targetViewController: UIKit.UIViewController, targetUrl: Swift.String, autoCloseSurvey: Foundation.NSNumber = false)
-  @objc public func getInitializedIntercepts() -> [Swift.String]
-  @objc public func getPassingIntercepts() -> [Swift.String]
-  @objc public func setEmbeddedFeedbackDialogCloseListener(listener: (() -> Swift.Void)?)
-  @objc public func hide() -> Swift.Bool
-  @objc public func registerViewVisit(viewName: Swift.String)
-  @objc public func resetTimer()
-  @objc public func resetViewCounter()
-  @objc public func getQualtricsContactId(interceptId: Swift.String) -> Swift.String?
-  @objc deinit
-}
 @objc public enum CreativeType : Swift.Int {
   case Notification
   case PopOver
@@ -80,13 +79,14 @@ import _Concurrency
 extension Swift.Decodable {
   public func getAlignment(Alignment: Swift.String) -> UIKit.NSTextAlignment
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class QualtricsSurveyViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class QualtricsSurveyViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
   @objc @_Concurrency.MainActor(unsafe) public init(url: Swift.String, autoCloseSurvey: Foundation.NSNumber? = false)
+  @objc deinit
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor(unsafe) @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class InitializationResult : ObjectiveC.NSObject {
   @objc public func getMessage() -> Swift.String?
