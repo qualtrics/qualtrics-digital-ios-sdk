@@ -4,6 +4,11 @@ This package is Qualtrics' Digital IOS SDK to be used by IOS application via Swi
 All the public APIs and supported scenarios are documented here: [Getting started with IOS SDK](https://api.qualtrics.com/sdks/ZG9jOjgwNTgzNjY-getting-started-with-the-mobile-app-sdk-on-i-os)
 The release notes for each version can be found here: [Release Notes](https://api.qualtrics.com/sdks/ZG9jOjgwNTgzNjc-i-os-mobile-app-sdk-releases)
 
+## Issues / Support
+For help on the Qualtrics SDK, you will want to reach out to our support team via our [Support Portal]( https://www.qualtrics.com/support/).
+If you do not have a login, please work with your brand admin to file a support ticket.
+We do not take support requests or community PRs through GitHub.
+
 ## Installing the package through Swift Package Manager
 Add a dependency on qualtrics-digital-ios-sdk to your iOS application through Xcode with the following steps:
 
@@ -21,9 +26,3 @@ Add a dependency on qualtrics-digital-ios-sdk to your iOS application through Xc
 
 #### 5. Verify that the package has been added to your Project Navigator in Xcode, under `Package Dependencies` (In this example, it is directly under our example app `QualtricsSDKSwiftUI`):
 ![step 5](https://github.com/qualtrics/qualtrics-digital-ios-sdk/blob/main/ReadMeFiles/step5.png?raw=true)
-
-
-## Issues / Support
-For help on the Qualtrics SDK, you will want to reach out to our support team via our [Support Portal]( https://www.qualtrics.com/support/).
-If you do not have a login, please work with your brand admin to file a support ticket.
-We do not take support requests or community PRs through GitHub.
