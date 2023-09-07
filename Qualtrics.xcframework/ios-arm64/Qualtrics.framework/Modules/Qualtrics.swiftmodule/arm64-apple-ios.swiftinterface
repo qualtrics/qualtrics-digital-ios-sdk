@@ -1,6 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name Qualtrics
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
 import CommonCrypto
 import Foundation
 import StoreKit
@@ -9,10 +11,46 @@ import UIKit
 import UserNotifications
 import WebKit
 import _Concurrency
+import _StringProcessing
+@objc public class QualtricsTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @objc public var mobileAppPromptTheme: MobileAppPromptTheme
+  @objc public var embeddedAppFeedbackTheme: EmbeddedAppFeedbackTheme
+  @objc public init(mobileAppPromptTheme: MobileAppPromptTheme = MobileAppPromptTheme(), embeddedAppFeedbackTheme: EmbeddedAppFeedbackTheme = EmbeddedAppFeedbackTheme())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc public class ButtonTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  public var textColor: UIKit.UIColor
+  public var font: UIKit.UIFont
+  public var backgroundColor: UIKit.UIColor
+  public var borderColor: UIKit.UIColor
+  public var linkColor: UIKit.UIColor
+  @objc public init(textColor: UIKit.UIColor = QualtricsDefaultColors.background.toUIColor(), linkColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), font: UIKit.UIFont = QualtricsDefaultFonts.popOver(.button()).toUIFont(), backgroundColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), borderColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc public class MobileAppPromptTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  public var backgroundColor: UIKit.UIColor
+  public var headlineTextColor: UIKit.UIColor
+  public var descriptionTextColor: UIKit.UIColor
+  public var closeButtonColor: UIKit.UIColor
+  public var buttonOneTheme: ButtonTheme
+  public var buttonTwoTheme: ButtonTheme
+  public var headlineFont: UIKit.UIFont
+  public var descriptionFont: UIKit.UIFont
+  @objc public init(backgroundColor: UIKit.UIColor = QualtricsDefaultColors.background.toUIColor(), headlineTextColor: UIKit.UIColor = QualtricsDefaultColors.text.toUIColor(), headlineFont: UIKit.UIFont = QualtricsDefaultFonts.popOver(.headline).toUIFont(), descriptionTextColor: UIKit.UIColor = QualtricsDefaultColors.text.toUIColor(), descriptionFont: UIKit.UIFont = QualtricsDefaultFonts.popOver(.description).toUIFont(), closeButtonColor: UIKit.UIColor = QualtricsDefaultColors.closeButton.toUIColor(), buttonOneTheme: ButtonTheme = ButtonTheme.init(
+            textColor: QualtricsDefaultColors.button.toUIColor(),
+            backgroundColor: QualtricsDefaultColors.background.toUIColor(),
+            borderColor: QualtricsDefaultColors.button.toUIColor()
+        ), buttonTwoTheme: ButtonTheme = ButtonTheme())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Qualtrics : ObjectiveC.NSObject {
   @objc public static let shared: Qualtrics
   @objc final public let properties: QualtricsProperties
   @objc public var webviewTheme: QualtricsWebviewTheme
+  @objc public var qualtricsTheme: QualtricsTheme
   @available(*, deprecated, message: "This is being removed; please migrate to initializeProject.")
   @objc public func initialize(brandId: Swift.String, zoneId: Swift.String, interceptId: Swift.String, completion: ((_ InitializationResult: InitializationResult) -> Swift.Void)? = nil)
   @objc public func initializeProject(brandId: Swift.String, projectId: Swift.String, extRefId: Swift.String? = nil, completion: ((_ InitializationResults: [Swift.String : InitializationResult]) -> Swift.Void)? = nil)
@@ -33,6 +71,7 @@ import _Concurrency
   @objc public func resetTimer()
   @objc public func resetViewCounter()
   @objc public func getQualtricsContactId(interceptId: Swift.String) -> Swift.String?
+  @objc public func setCreativeTheme(to qualtricsTheme: QualtricsTheme)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class QualtricsWebviewTheme : ObjectiveC.NSObject {
@@ -40,6 +79,22 @@ import _Concurrency
   public func setCloseButtonImage(closeButtonImage: UIKit.UIImage?)
   public func getTopBarBackgroundColor() -> UIKit.UIColor
   public func setTopBarBackgroundColor(topBarBackgroundColor: UIKit.UIColor)
+  @objc deinit
+}
+@objc public class MultipleChoiceTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  final public let otherAnswerTextColor: UIKit.UIColor
+  final public let otherAnswerTextFont: UIKit.UIFont
+  final public let otherAnswerBackgroundColor: UIKit.UIColor
+  final public let questionTextColor: UIKit.UIColor
+  final public let questionTextFont: UIKit.UIFont
+  final public let radioButtonsTheme: RadioButtonTheme
+  @objc public init(questionTextColor: UIKit.UIColor = QualtricsDefaultColors.black.toUIColor(), questionTextFont: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.description).toUIFont(), otherAnswerTextColor: UIKit.UIColor = QualtricsDefaultColors.black.toUIColor(), otherAnswetTextFont: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.textbox).toUIFont(), otherAnswerBackgroundColor: UIKit.UIColor = QualtricsDefaultColors.whitesmoke.toUIColor(), radioButtonsTheme: RadioButtonTheme = RadioButtonTheme())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc public class SubmitButtonTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @objc public init(textColor: UIKit.UIColor = QualtricsDefaultColors.background.toUIColor(), font: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.button(.submit)).toUIFont(), fillColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), separatorColor: UIKit.UIColor = QualtricsDefaultColors.background.toUIColor())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class QualtricsProperties : ObjectiveC.NSObject {
@@ -79,18 +134,98 @@ import _Concurrency
 extension Swift.Decodable {
   public func getAlignment(Alignment: Swift.String) -> UIKit.NSTextAlignment
 }
+@objc public class EmbeddedAppFeedbackTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  final public let dialogBackgroundColor: UIKit.UIColor
+  final public let dialogShadowColor: UIKit.UIColor
+  final public let closeButtonColor: UIKit.UIColor
+  final public let initialQuestionColor: UIKit.UIColor
+  final public let initialQuestionFont: UIKit.UIFont
+  final public let thankYouTextColor: UIKit.UIColor
+  final public let thankYouTextFont: UIKit.UIFont
+  final public let followupQuestionTheme: FollowupQuestionTheme
+  final public let thumbsButtonsTheme: ThumbButtonTheme
+  final public let yesNoButtonsTheme: YesNoButtonTheme
+  final public let starTheme: StarButtonTheme
+  final public let emojiTheme: EmojiButtonTheme
+  final public let submitButtonTheme: SubmitButtonTheme
+  final public let multipleChoiceTheme: MultipleChoiceTheme
+  @objc public init(dialogBackgroundColor: UIKit.UIColor = QualtricsDefaultColors.white.toUIColor(), dialogShadowColor: UIKit.UIColor = QualtricsDefaultColors.black.toUIColor(), closeButtonColor: UIKit.UIColor = QualtricsDefaultColors.darkGray.toUIColor(), initialQuestionColor: UIKit.UIColor = QualtricsDefaultColors.text.toUIColor(), initialQuestionFont: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.description).toUIFont(), thankYouTextColor: UIKit.UIColor = QualtricsDefaultColors.text.toUIColor(), thankYouTextFont: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.description).toUIFont(), followupQuestionTheme: FollowupQuestionTheme = FollowupQuestionTheme(), thumbsButtonsTheme: ThumbButtonTheme = ThumbButtonTheme(), yesNoButtonsTheme: YesNoButtonTheme = YesNoButtonTheme(), starTheme: StarButtonTheme = StarButtonTheme(), emojiTheme: EmojiButtonTheme = EmojiButtonTheme(), submitButtonTheme: SubmitButtonTheme = SubmitButtonTheme(), multipleChoiceTheme: MultipleChoiceTheme = MultipleChoiceTheme())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum QualtricsDefaultColors : Swift.String {
+  case background
+  case divider
+  case text
+  case closeButton
+  case button
+  case darkGray
+  case lightGray
+  case white
+  case whitesmoke
+  case black
+  case yellow
+  public func toUIColor() -> UIKit.UIColor
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CustomButtonStyle {
+  case normal
+  case yesNo
+  case submit
+  case radiobutton
+  public static func == (a: CustomButtonStyle, b: CustomButtonStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CustomFontType {
+  case headline
+  case description
+  case button(_: CustomButtonStyle = .normal)
+  case textbox
+}
+public enum QualtricsDefaultFonts {
+  case popOver(CustomFontType)
+  case embeddedFeedback(CustomFontType)
+  public func toUIFont() -> UIKit.UIFont
+}
+@objc public class YesNoButtonTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @objc public init(yesButtonTitleColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), yesButtonFont: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.button(.yesNo)).toUIFont(), yesButtonBackgroundColor: UIKit.UIColor = QualtricsDefaultColors.white.toUIColor(), yesButtonBorderColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), noButtonTitleColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), noButtonFont: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.button(.yesNo)).toUIFont(), noButtonBackgroundColor: UIKit.UIColor = QualtricsDefaultColors.white.toUIColor(), noButtonBorderColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), pressedButtonColor: UIKit.UIColor = QualtricsDefaultColors.lightGray.toUIColor(), pressedButtonBackground: UIKit.UIColor = QualtricsDefaultColors.darkGray.toUIColor())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class QualtricsSurveyViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
   @objc @_Concurrency.MainActor(unsafe) public init(url: Swift.String, autoCloseSurvey: Foundation.NSNumber? = false)
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
   @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor(unsafe) @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 @_hasMissingDesignatedInitializers @objc public class InitializationResult : ObjectiveC.NSObject {
   @objc public func getMessage() -> Swift.String?
   @objc public func passed() -> Swift.Bool
+  @objc deinit
+}
+@objc public class ThumbButtonTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @objc public init(thumbUpColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), thumbUpBackground: UIKit.UIColor = QualtricsDefaultColors.white.toUIColor(), thumbDownColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), thumbDownBackground: UIKit.UIColor = QualtricsDefaultColors.white.toUIColor(), pressedThumbColor: UIKit.UIColor = QualtricsDefaultColors.lightGray.toUIColor(), pressedThumbBackground: UIKit.UIColor = QualtricsDefaultColors.darkGray.toUIColor())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc public class StarButtonTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @objc public init(backgroundColor: UIKit.UIColor = QualtricsDefaultColors.white.toUIColor(), tintColor: UIKit.UIColor = QualtricsDefaultColors.darkGray.toUIColor(), pressedTintColor: UIKit.UIColor = QualtricsDefaultColors.lightGray.toUIColor(), pressedBackgroundColor: UIKit.UIColor = QualtricsDefaultColors.darkGray.toUIColor())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc public class EmojiButtonTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  @objc public init(backgroundColor: UIKit.UIColor = QualtricsDefaultColors.yellow.toUIColor(), borderColor: UIKit.UIColor = QualtricsDefaultColors.darkGray.toUIColor(), tintColor: UIKit.UIColor = QualtricsDefaultColors.darkGray.toUIColor())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 @objc public enum targetingResultStatus : Swift.Int {
@@ -110,9 +245,37 @@ extension Swift.Decodable {
     get
   }
 }
+@objc public class FollowupQuestionTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  final public let color: UIKit.UIColor
+  final public let font: UIKit.UIFont
+  final public let textInputColor: UIKit.UIColor
+  final public let textInputFont: UIKit.UIFont
+  final public let textInputBackgroundcolor: UIKit.UIColor
+  @objc public init(color: UIKit.UIColor = QualtricsDefaultColors.text.toUIColor(), font: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.description).toUIFont(), textInputColor: UIKit.UIColor = QualtricsDefaultColors.black.toUIColor(), textInputFont: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.textbox).toUIFont(), textInputBackgroundcolor: UIKit.UIColor = QualtricsDefaultColors.whitesmoke.toUIColor())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc public class RadioButtonTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
+  final public let textColor: UIKit.UIColor
+  final public let font: UIKit.UIFont
+  final public let backgroundColor: UIKit.UIColor
+  final public let selectedBorderColor: UIKit.UIColor
+  final public let borderColor: UIKit.UIColor
+  final public let selectedBackgroundColor: UIKit.UIColor
+  final public let selectedFillColor: UIKit.UIColor
+  final public let fillColor: UIKit.UIColor
+  @objc public init(textColor: UIKit.UIColor = QualtricsDefaultColors.black.toUIColor(), font: UIKit.UIFont = QualtricsDefaultFonts.embeddedFeedback(.button(.radiobutton)).toUIFont(), borderColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), selectedBorderColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), backgroundColor: UIKit.UIColor = QualtricsDefaultColors.white.toUIColor(), selectedBackgroundColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), fillColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor(), selectedFillColor: UIKit.UIColor = QualtricsDefaultColors.button.toUIColor())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
 extension CreativeType : Swift.Equatable {}
 extension CreativeType : Swift.Hashable {}
 extension CreativeType : Swift.RawRepresentable {}
+extension QualtricsDefaultColors : Swift.Equatable {}
+extension QualtricsDefaultColors : Swift.Hashable {}
+extension QualtricsDefaultColors : Swift.RawRepresentable {}
+extension CustomButtonStyle : Swift.Equatable {}
+extension CustomButtonStyle : Swift.Hashable {}
 extension targetingResultStatus : Swift.Equatable {}
 extension targetingResultStatus : Swift.Hashable {}
 extension targetingResultStatus : Swift.RawRepresentable {}
