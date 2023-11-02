@@ -13554,6 +13554,23 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Qualtrics"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qualtrics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -88703,6 +88720,204 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIWindow",
+        "printedName": "UIWindow",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIWindowC9QualtricsE3keyABSgvpZ",
+            "mangledName": "$sSo8UIWindowC9QualtricsE3keyABSgvpZ",
+            "moduleName": "Qualtrics",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIWindow?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIWindow",
+                        "printedName": "UIKit.UIWindow",
+                        "usr": "c:objc(cs)UIWindow"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIWindowC9QualtricsE3keyABSgvgZ",
+                "mangledName": "$sSo8UIWindowC9QualtricsE3keyABSgvgZ",
+                "moduleName": "Qualtrics",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statusBarHeight",
+            "printedName": "statusBarHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIWindowC9QualtricsE15statusBarHeight14CoreFoundation7CGFloatVvpZ",
+            "mangledName": "$sSo8UIWindowC9QualtricsE15statusBarHeight12CoreGraphics7CGFloatVvpZ",
+            "moduleName": "Qualtrics",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIWindowC9QualtricsE15statusBarHeight14CoreFoundation7CGFloatVvgZ",
+                "mangledName": "$sSo8UIWindowC9QualtricsE15statusBarHeight12CoreGraphics7CGFloatVvgZ",
+                "moduleName": "Qualtrics",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIWindow",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIWindow",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "String",
         "printedName": "String",
         "children": [
@@ -91158,105 +91373,105 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 44692,
+      "offset": 44688,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 44692,
+      "offset": 44688,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45177,
+      "offset": 45173,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45194,
+      "offset": 45190,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45177,
+      "offset": 45173,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45194,
+      "offset": 45190,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 46156,
+      "offset": 46152,
       "length": 30,
       "value": "\"Qualtrics.NotificationCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 46777,
+      "offset": 46773,
       "length": 25,
       "value": "\"Qualtrics.PopOverCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 47481,
+      "offset": 47477,
       "length": 34,
       "value": "\"Qualtrics.EmbeddedFeedbackCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49822,
+      "offset": 49818,
       "length": 11,
       "value": "\"Questions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49862,
+      "offset": 49858,
       "length": 14,
       "value": "\"Translations\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49947,
+      "offset": 49943,
       "length": 27,
       "value": "\"ThemeOverriddenThroughSdk\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49822,
+      "offset": 49818,
       "length": 11,
       "value": "\"Questions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49862,
+      "offset": 49858,
       "length": 14,
       "value": "\"Translations\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49947,
+      "offset": 49943,
       "length": 27,
       "value": "\"ThemeOverriddenThroughSdk\""
     },
@@ -91571,7 +91786,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1984,
+      "offset": 1983,
       "length": 5,
       "value": "false"
     },

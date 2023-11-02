@@ -933,6 +933,7 @@ SWIFT_CLASS("_TtC9Qualtrics16ThumbButtonTheme")
 
 
 
+
 /// <ul>
 ///   <li>
 ///     <em>Dark Mode Support</em>:
@@ -1935,6 +1936,7 @@ SWIFT_CLASS("_TtC9Qualtrics16ThumbButtonTheme")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
