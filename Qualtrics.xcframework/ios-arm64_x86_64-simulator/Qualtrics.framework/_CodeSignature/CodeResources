@@ -23,7 +23,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zVCds5lJPpYaO59yepzPQMR1K5M=
+		CFfkxnTEh7m+OEg3E9iDJ0wNNqc=
 		</data>
 		<key>Modules/Qualtrics.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -68,6 +68,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		dTJiY6GKtGEWIC9JUbPMKT89aiY=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		71KeXLOTOKxQpID4xLl1BQ1xEDI=
 		</data>
 		<key>da.lproj/Localizable.strings</key>
 		<dict>
@@ -332,6 +336,13 @@
 			<key>hash2</key>
 			<data>
 			LS70BZSEsEAzzrnFk1OYTGS1QF4t9G6jDo4xDEdre+c=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bjIENy5t7/K2f2zPYGWxaIlxUjByeuK4qP/DZ5UtRvw=
 			</data>
 		</dict>
 		<key>da.lproj/Localizable.strings</key>
