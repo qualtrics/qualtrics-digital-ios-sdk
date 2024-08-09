@@ -90782,6 +90782,36 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "percentEncodingIncludingReservedChars",
+            "printedName": "percentEncodingIncludingReservedChars()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS9QualtricsE37percentEncodingIncludingReservedCharsSSSgyF",
+            "mangledName": "$sSS9QualtricsE37percentEncodingIncludingReservedCharsSSSgyF",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -93493,14 +93523,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/OtherSources\/SiteInterceptService.swift",
       "kind": "BooleanLiteral",
-      "offset": 13487,
+      "offset": 13614,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/OtherSources\/SiteInterceptService.swift",
       "kind": "BooleanLiteral",
-      "offset": 18100,
+      "offset": 18227,
       "length": 5,
       "value": "false"
     },
@@ -93584,105 +93614,105 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 44661,
+      "offset": 44662,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 44661,
+      "offset": 44662,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45146,
+      "offset": 45147,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45163,
+      "offset": 45164,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45146,
+      "offset": 45147,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45163,
+      "offset": 45164,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 46125,
+      "offset": 46126,
       "length": 30,
       "value": "\"Qualtrics.NotificationCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 46746,
+      "offset": 46747,
       "length": 25,
       "value": "\"Qualtrics.PopOverCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 47450,
+      "offset": 47451,
       "length": 34,
       "value": "\"Qualtrics.EmbeddedFeedbackCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49791,
+      "offset": 49792,
       "length": 11,
       "value": "\"Questions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49831,
+      "offset": 49832,
       "length": 14,
       "value": "\"Translations\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49916,
+      "offset": 49917,
       "length": 27,
       "value": "\"ThemeOverriddenThroughSdk\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49791,
+      "offset": 49792,
       "length": 11,
       "value": "\"Questions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49831,
+      "offset": 49832,
       "length": 14,
       "value": "\"Translations\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49916,
+      "offset": 49917,
       "length": 27,
       "value": "\"ThemeOverriddenThroughSdk\""
     },
