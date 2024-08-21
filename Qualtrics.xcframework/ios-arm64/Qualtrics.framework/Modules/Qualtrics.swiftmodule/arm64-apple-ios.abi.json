@@ -11547,6 +11547,35 @@
           },
           {
             "kind": "Function",
+            "name": "setLastDisplayTimeForIntercept",
+            "printedName": "setLastDisplayTimeForIntercept(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Qualtrics@objc(cs)QualtricsProperties(im)setLastDisplayTimeForInterceptFor:",
+            "mangledName": "$s9Qualtrics0A10PropertiesC30setLastDisplayTimeForIntercept3forySS_tF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "objc_name": "setLastDisplayTimeForInterceptFor:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getString",
             "printedName": "getString(for:)",
             "children": [
@@ -11911,30 +11940,6 @@
             "declKind": "Func",
             "usr": "s:9Qualtrics0A10PropertiesC30getLastDisplayTimeForIntercept3forSdSgSS_tF",
             "mangledName": "$s9Qualtrics0A10PropertiesC30getLastDisplayTimeForIntercept3forSdSgSS_tF",
-            "moduleName": "Qualtrics",
-            "isOpen": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setLastDisplayTimeForIntercept",
-            "printedName": "setLastDisplayTimeForIntercept(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9Qualtrics0A10PropertiesC30setLastDisplayTimeForIntercept3forySS_tF",
-            "mangledName": "$s9Qualtrics0A10PropertiesC30setLastDisplayTimeForIntercept3forySS_tF",
             "moduleName": "Qualtrics",
             "isOpen": true,
             "funcSelfKind": "NonMutating"
@@ -77545,6 +77550,403 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "SupportedOperation",
+        "printedName": "SupportedOperation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "initializeProject",
+            "printedName": "initializeProject",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Qualtrics.SupportedOperation.Type) -> Qualtrics.SupportedOperation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SupportedOperation",
+                    "printedName": "Qualtrics.SupportedOperation",
+                    "usr": "s:9Qualtrics18SupportedOperationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Qualtrics.SupportedOperation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SupportedOperation",
+                        "printedName": "Qualtrics.SupportedOperation",
+                        "usr": "s:9Qualtrics18SupportedOperationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9Qualtrics18SupportedOperationO17initializeProjectyA2CmF",
+            "mangledName": "$s9Qualtrics18SupportedOperationO17initializeProjectyA2CmF",
+            "moduleName": "Qualtrics",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedOperation",
+                "printedName": "Qualtrics.SupportedOperation",
+                "usr": "s:9Qualtrics18SupportedOperationO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedOperation",
+                "printedName": "Qualtrics.SupportedOperation",
+                "usr": "s:9Qualtrics18SupportedOperationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics18SupportedOperationO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9Qualtrics18SupportedOperationO2eeoiySbAC_ACtFZ",
+            "moduleName": "Qualtrics",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics18SupportedOperationO9hashValueSivp",
+            "mangledName": "$s9Qualtrics18SupportedOperationO9hashValueSivp",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics18SupportedOperationO9hashValueSivg",
+                "mangledName": "$s9Qualtrics18SupportedOperationO9hashValueSivg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics18SupportedOperationO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9Qualtrics18SupportedOperationO4hash4intoys6HasherVz_tF",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9Qualtrics18SupportedOperationO",
+        "mangledName": "$s9Qualtrics18SupportedOperationO",
+        "moduleName": "Qualtrics",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OperationSynchronizer",
+        "printedName": "OperationSynchronizer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ongoingOperationLock",
+            "printedName": "ongoingOperationLock",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSLock",
+                "printedName": "Foundation.NSLock",
+                "usr": "c:objc(cs)NSLock"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics21OperationSynchronizerC07ongoingB4Lock33_7D411ECEF6777A10B0281FA0F59E2723LLSo6NSLockCvp",
+            "mangledName": "$s9Qualtrics21OperationSynchronizerC07ongoingB4Lock33_7D411ECEF6777A10B0281FA0F59E2723LLSo6NSLockCvp",
+            "moduleName": "Qualtrics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_ongoingOperations",
+            "printedName": "_ongoingOperations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Qualtrics.SupportedOperation : Dispatch.DispatchGroup]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SupportedOperation",
+                    "printedName": "Qualtrics.SupportedOperation",
+                    "usr": "s:9Qualtrics18SupportedOperationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchGroup",
+                    "printedName": "Dispatch.DispatchGroup",
+                    "usr": "c:objc(cs)OS_dispatch_group"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics21OperationSynchronizerC18_ongoingOperations33_7D411ECEF6777A10B0281FA0F59E2723LLSDyAA09SupportedB0OSo17OS_dispatch_groupCGvp",
+            "mangledName": "$s9Qualtrics21OperationSynchronizerC18_ongoingOperations33_7D411ECEF6777A10B0281FA0F59E2723LLSDyAA09SupportedB0OSo17OS_dispatch_groupCGvp",
+            "moduleName": "Qualtrics",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true
+          },
+          {
+            "kind": "Function",
+            "name": "beginOperation",
+            "printedName": "beginOperation(operation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedOperation",
+                "printedName": "Qualtrics.SupportedOperation",
+                "usr": "s:9Qualtrics18SupportedOperationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics21OperationSynchronizerC05beginB09operationyAA09SupportedB0O_tF",
+            "mangledName": "$s9Qualtrics21OperationSynchronizerC05beginB09operationyAA09SupportedB0O_tF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isOperationRunning",
+            "printedName": "isOperationRunning(operation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedOperation",
+                "printedName": "Qualtrics.SupportedOperation",
+                "usr": "s:9Qualtrics18SupportedOperationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics21OperationSynchronizerC02isB7Running9operationSbAA09SupportedB0O_tF",
+            "mangledName": "$s9Qualtrics21OperationSynchronizerC02isB7Running9operationSbAA09SupportedB0O_tF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finishOperation",
+            "printedName": "finishOperation(operation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedOperation",
+                "printedName": "Qualtrics.SupportedOperation",
+                "usr": "s:9Qualtrics18SupportedOperationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics21OperationSynchronizerC06finishB09operationyAA09SupportedB0O_tF",
+            "mangledName": "$s9Qualtrics21OperationSynchronizerC06finishB09operationyAA09SupportedB0O_tF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "waitForOngoingOperation",
+            "printedName": "waitForOngoingOperation(operation:timeoutSeconds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SupportedOperation",
+                "printedName": "Qualtrics.SupportedOperation",
+                "usr": "s:9Qualtrics18SupportedOperationO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics21OperationSynchronizerC014waitForOngoingB09operation14timeoutSecondsyAA09SupportedB0O_SiSgtF",
+            "mangledName": "$s9Qualtrics21OperationSynchronizerC014waitForOngoingB09operation14timeoutSecondsyAA09SupportedB0O_SiSgtF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OperationSynchronizer",
+                "printedName": "Qualtrics.OperationSynchronizer",
+                "usr": "s:9Qualtrics21OperationSynchronizerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9Qualtrics21OperationSynchronizerCACycfc",
+            "mangledName": "$s9Qualtrics21OperationSynchronizerCACycfc",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9Qualtrics21OperationSynchronizerC",
+        "mangledName": "$s9Qualtrics21OperationSynchronizerC",
+        "moduleName": "Qualtrics",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qualtrics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DisplayRate",
         "printedName": "DisplayRate",
         "children": [
@@ -92585,21 +92987,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/OtherSources\/Qualtrics.swift",
       "kind": "BooleanLiteral",
-      "offset": 9723,
+      "offset": 10469,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/OtherSources\/Qualtrics.swift",
       "kind": "BooleanLiteral",
-      "offset": 10193,
+      "offset": 10939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/OtherSources\/Qualtrics.swift",
       "kind": "BooleanLiteral",
-      "offset": 10708,
+      "offset": 11454,
       "length": 5,
       "value": "false"
     },
@@ -94254,6 +94656,13 @@
       "offset": 271,
       "length": 82,
       "value": "[(\"ZH-S\", [\"ZH-CN\", \"ZH-HANS\"]), (\"ZH-T\", [\"ZH-TW\", \"ZH-HANT\"])]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/OtherSources\/OperationSynchronizer.swift",
+      "kind": "Dictionary",
+      "offset": 402,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/XMDUtils.swift",
