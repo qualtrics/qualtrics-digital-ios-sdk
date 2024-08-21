@@ -103,6 +103,7 @@ import _SwiftConcurrencyShims
   @objc public func setString(string: Swift.String, for key: Swift.String)
   @objc public func setNumber(number: Swift.Double, for key: Swift.String)
   @objc public func setDateTime(for key: Swift.String)
+  @objc public func setLastDisplayTimeForIntercept(for interceptId: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }

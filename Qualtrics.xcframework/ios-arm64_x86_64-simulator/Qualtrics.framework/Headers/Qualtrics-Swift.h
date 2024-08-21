@@ -692,6 +692,7 @@ SWIFT_CLASS("_TtC9Qualtrics19QualtricsProperties")
 - (void)setStringWithString:(NSString * _Nonnull)string for:(NSString * _Nonnull)key;
 - (void)setNumberWithNumber:(double)number for:(NSString * _Nonnull)key;
 - (void)setDateTimeFor:(NSString * _Nonnull)key;
+- (void)setLastDisplayTimeForInterceptFor:(NSString * _Nonnull)interceptId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1750,6 +1751,7 @@ SWIFT_CLASS("_TtC9Qualtrics19QualtricsProperties")
 - (void)setStringWithString:(NSString * _Nonnull)string for:(NSString * _Nonnull)key;
 - (void)setNumberWithNumber:(double)number for:(NSString * _Nonnull)key;
 - (void)setDateTimeFor:(NSString * _Nonnull)key;
+- (void)setLastDisplayTimeForInterceptFor:(NSString * _Nonnull)interceptId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
