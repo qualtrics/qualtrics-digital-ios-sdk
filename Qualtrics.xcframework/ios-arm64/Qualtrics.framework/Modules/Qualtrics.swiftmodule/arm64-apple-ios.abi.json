@@ -70946,16 +70946,90 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounter021_9AFA2E2ACDE05F0015E6K10B4A5C8CD2DLLSivp",
-            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounter021_9AFA2E2ACDE05F0015E6K10B4A5C8CD2DLLSivp",
+            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounterSivp",
+            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounterSivp",
             "moduleName": "Qualtrics",
-            "isInternal": true,
+            "isOpen": true,
             "declAttributes": [
-              "HasStorage",
-              "AccessControl"
+              "HasStorage"
             ],
             "fixedbinaryorder": 10,
-            "hasStorage": true
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounterSivg",
+                "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounterSivg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounterSivs",
+                "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounterSivs",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounterSivM",
+                "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC27enteredDispatchGroupCounterSivM",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
           },
           {
             "kind": "Var",
@@ -71966,6 +72040,27 @@
             "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC26populateTriggeredActionSet11interceptId06actioniK08creativeySS_SSAA16CreativeProtocol_ptF",
             "moduleName": "Qualtrics",
             "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enterEvaluationDispatchGroup",
+            "printedName": "enterEvaluationDispatchGroup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC28enterEvaluationDispatchGroupyyF",
+            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC28enterEvaluationDispatchGroupyyF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "funcSelfKind": "NonMutating"
           },
           {
@@ -91017,6 +91112,71 @@
           },
           {
             "kind": "Var",
+            "name": "activeScene",
+            "printedName": "activeScene",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindowScene?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindowScene",
+                    "printedName": "UIKit.UIWindowScene",
+                    "usr": "c:objc(cs)UIWindowScene"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIWindowC9QualtricsE11activeSceneSo0aD0CSgvpZ",
+            "mangledName": "$sSo8UIWindowC9QualtricsE11activeSceneSo0aD0CSgvpZ",
+            "moduleName": "Qualtrics",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIWindowScene?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIWindowScene",
+                        "printedName": "UIKit.UIWindowScene",
+                        "usr": "c:objc(cs)UIWindowScene"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIWindowC9QualtricsE11activeSceneSo0aD0CSgvgZ",
+                "mangledName": "$sSo8UIWindowC9QualtricsE11activeSceneSo0aD0CSgvgZ",
+                "moduleName": "Qualtrics",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "statusBarHeight",
             "printedName": "statusBarHeight",
             "children": [
@@ -94492,21 +94652,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 22238,
+      "offset": 22732,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 23370,
+      "offset": 23864,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 25308,
+      "offset": 25802,
       "length": 5,
       "value": "false"
     },
