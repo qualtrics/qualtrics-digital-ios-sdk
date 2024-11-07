@@ -3772,7 +3772,7 @@
           {
             "kind": "Function",
             "name": "backOffAndRetry",
-            "printedName": "backOffAndRetry(retryFunction:)",
+            "printedName": "backOffAndRetry(retryFunction:failFunction:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3795,11 +3795,37 @@
                     "printedName": "()"
                   }
                 ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9Qualtrics14BackOffRetryerC04backC8AndRetry13retryFunctionyyyc_tF",
-            "mangledName": "$s9Qualtrics14BackOffRetryerC04backC8AndRetry13retryFunctionyyyc_tF",
+            "usr": "s:9Qualtrics14BackOffRetryerC04backC8AndRetry13retryFunction04failI0yyyc_yycSgtF",
+            "mangledName": "$s9Qualtrics14BackOffRetryerC04backC8AndRetry13retryFunction04failI0yyyc_yycSgtF",
             "moduleName": "Qualtrics",
             "declAttributes": [
               "Final",
@@ -24081,6 +24107,31 @@
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics22TargetingRetryResponseV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9Qualtrics22TargetingRetryResponseV6encode2toys7Encoder_p_tKF",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -24094,6 +24145,13 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
@@ -25087,6 +25145,69 @@
           },
           {
             "kind": "Var",
+            "name": "SurveyID",
+            "printedName": "SurveyID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics12CSTActionSetV8SurveyIDSSSgvp",
+            "mangledName": "$s9Qualtrics12CSTActionSetV8SurveyIDSSSgvp",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics12CSTActionSetV8SurveyIDSSSgvg",
+                "mangledName": "$s9Qualtrics12CSTActionSetV8SurveyIDSSSgvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "Target",
             "printedName": "Target",
             "children": [
@@ -25104,7 +25225,7 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 2,
+            "fixedbinaryorder": 3,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -25151,7 +25272,7 @@
             "declAttributes": [
               "HasStorage"
             ],
-            "fixedbinaryorder": 3,
+            "fixedbinaryorder": 4,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -25182,7 +25303,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(ActionSetID:Creative:Target:LogicTree:)",
+            "printedName": "init(ActionSetID:Creative:SurveyID:Target:LogicTree:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -25204,6 +25325,20 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "CSTTarget",
                 "printedName": "Qualtrics.CSTTarget",
                 "usr": "s:9Qualtrics9CSTTargetV"
@@ -25216,8 +25351,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9Qualtrics12CSTActionSetV06ActionC2ID8Creative6Target9LogicTreeACSS_AA11CSTCreativeVAA9CSTTargetVAA8RootNodeCtcfc",
-            "mangledName": "$s9Qualtrics12CSTActionSetV06ActionC2ID8Creative6Target9LogicTreeACSS_AA11CSTCreativeVAA9CSTTargetVAA8RootNodeCtcfc",
+            "usr": "s:9Qualtrics12CSTActionSetV06ActionC2ID8Creative06SurveyE06Target9LogicTreeACSS_AA11CSTCreativeVSSSgAA9CSTTargetVAA8RootNodeCtcfc",
+            "mangledName": "$s9Qualtrics12CSTActionSetV06ActionC2ID8Creative06SurveyE06Target9LogicTreeACSS_AA11CSTCreativeVSSSgAA9CSTTargetVAA8RootNodeCtcfc",
             "moduleName": "Qualtrics",
             "implicit": true,
             "init_kind": "Designated"
@@ -94120,14 +94255,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Managers\/InterceptManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 25120,
+      "offset": 25238,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Managers\/InterceptManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 26223,
+      "offset": 26341,
       "length": 5,
       "value": "false"
     },
@@ -94141,140 +94276,140 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "BooleanLiteral",
-      "offset": 19938,
+      "offset": 19962,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 21575,
+      "offset": 21599,
       "length": 10,
       "value": "\"Creative\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 21575,
+      "offset": 21599,
       "length": 10,
       "value": "\"Creative\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "BooleanLiteral",
-      "offset": 30237,
+      "offset": 30261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "BooleanLiteral",
-      "offset": 32845,
+      "offset": 32869,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 44662,
+      "offset": 44686,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 44662,
+      "offset": 44686,
       "length": 6,
       "value": "\"Type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45147,
+      "offset": 45171,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45164,
+      "offset": 45188,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45147,
+      "offset": 45171,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "IntegerLiteral",
-      "offset": 45164,
+      "offset": 45188,
       "length": 16,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 46126,
+      "offset": 46150,
       "length": 30,
       "value": "\"Qualtrics.NotificationCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 46747,
+      "offset": 46771,
       "length": 25,
       "value": "\"Qualtrics.PopOverCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 47451,
+      "offset": 47475,
       "length": 34,
       "value": "\"Qualtrics.EmbeddedFeedbackCreativeDefinition\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49792,
+      "offset": 49816,
       "length": 11,
       "value": "\"Questions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49832,
+      "offset": 49856,
       "length": 14,
       "value": "\"Translations\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49917,
+      "offset": 49941,
       "length": 27,
       "value": "\"ThemeOverriddenThroughSdk\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49792,
+      "offset": 49816,
       "length": 11,
       "value": "\"Questions\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49832,
+      "offset": 49856,
       "length": 14,
       "value": "\"Translations\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Models\/JsonClasses.swift",
       "kind": "StringLiteral",
-      "offset": 49917,
+      "offset": 49941,
       "length": 27,
       "value": "\"ThemeOverriddenThroughSdk\""
     },
@@ -94652,21 +94787,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 22732,
+      "offset": 22800,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 23864,
+      "offset": 23932,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 25802,
+      "offset": 25870,
       "length": 5,
       "value": "false"
     },
