@@ -3455,6 +3455,351 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Qualtrics"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QualtricsEmbeddedFeedbackViewControllerBase",
+        "printedName": "QualtricsEmbeddedFeedbackViewControllerBase",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "reloadView",
+            "printedName": "reloadView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC06reloadD0yyF",
+            "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC06reloadD0yyF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decomposeView",
+            "printedName": "decomposeView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC09decomposeD0yyF",
+            "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC09decomposeD0yyF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllSubviews",
+            "printedName": "removeAllSubviews(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC17removeAllSubviews4fromySo6UIViewC_tF",
+            "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC17removeAllSubviews4fromySo6UIViewC_tF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewWillTransition",
+            "printedName": "viewWillTransition(to:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewControllerTransitionCoordinator",
+                "printedName": "any UIKit.UIViewControllerTransitionCoordinator",
+                "usr": "c:objc(pl)UIViewControllerTransitionCoordinator"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Qualtrics@objc(cs)QualtricsEmbeddedFeedbackViewControllerBase(im)viewWillTransitionToSize:withTransitionCoordinator:",
+            "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC18viewWillTransition2to4withySo6CGSizeV_So06UIVieweI11Coordinator_ptF",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewWillTransitionToSize:withTransitionCoordinator:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createDimBackground",
+            "printedName": "createDimBackground(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC19createDimBackground4fromySo6UIViewC_tF",
+            "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC19createDimBackground4fromySo6UIViewC_tF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeDimBackground",
+            "printedName": "removeDimBackground(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC19removeDimBackground4fromySo6UIViewC_tF",
+            "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC19removeDimBackground4fromySo6UIViewC_tF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QualtricsEmbeddedFeedbackViewControllerBase",
+                "printedName": "Qualtrics.QualtricsEmbeddedFeedbackViewControllerBase",
+                "usr": "c:@M@Qualtrics@objc(cs)QualtricsEmbeddedFeedbackViewControllerBase"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Qualtrics@objc(cs)QualtricsEmbeddedFeedbackViewControllerBase(im)initWithNibName:bundle:",
+            "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qualtrics.QualtricsEmbeddedFeedbackViewControllerBase?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsEmbeddedFeedbackViewControllerBase",
+                    "printedName": "Qualtrics.QualtricsEmbeddedFeedbackViewControllerBase",
+                    "usr": "c:@M@Qualtrics@objc(cs)QualtricsEmbeddedFeedbackViewControllerBase"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Qualtrics@objc(cs)QualtricsEmbeddedFeedbackViewControllerBase(im)initWithCoder:",
+            "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Qualtrics@objc(cs)QualtricsEmbeddedFeedbackViewControllerBase",
+        "mangledName": "$s9Qualtrics0A34EmbeddedFeedbackViewControllerBaseC",
+        "moduleName": "Qualtrics",
+        "isOpen": true,
+        "declAttributes": [
+          "Custom",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -15561,6 +15906,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -16615,6 +16967,52 @@
           },
           {
             "kind": "Function",
+            "name": "reloadView",
+            "printedName": "reloadView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A30EmbeddedFeedbackViewControllerC06reloadD0yyF",
+            "mangledName": "$s9Qualtrics0A30EmbeddedFeedbackViewControllerC06reloadD0yyF",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decomposeView",
+            "printedName": "decomposeView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A30EmbeddedFeedbackViewControllerC09decomposeD0yyF",
+            "mangledName": "$s9Qualtrics0A30EmbeddedFeedbackViewControllerC09decomposeD0yyF",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "usePressedStateButtonColor",
             "printedName": "usePressedStateButtonColor(sender:)",
             "children": [
@@ -16820,8 +17218,9 @@
           "Custom",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)UIViewController",
+        "superclassUsr": "c:@M@Qualtrics@objc(cs)QualtricsEmbeddedFeedbackViewControllerBase",
         "superclassNames": [
+          "Qualtrics.QualtricsEmbeddedFeedbackViewControllerBase",
           "UIKit.UIViewController",
           "UIKit.UIResponder",
           "ObjectiveC.NSObject"
@@ -16878,17 +17277,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -17529,6 +17928,52 @@
           },
           {
             "kind": "Function",
+            "name": "reloadView",
+            "printedName": "reloadView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics46EmbeddedFeedbackFollowupQuestionViewControllerC06reloadF0yyF",
+            "mangledName": "$s9Qualtrics46EmbeddedFeedbackFollowupQuestionViewControllerC06reloadF0yyF",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "decomposeView",
+            "printedName": "decomposeView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics46EmbeddedFeedbackFollowupQuestionViewControllerC09decomposeF0yyF",
+            "mangledName": "$s9Qualtrics46EmbeddedFeedbackFollowupQuestionViewControllerC09decomposeF0yyF",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setDialogViewTopConstraint",
             "printedName": "setDialogViewTopConstraint(extraHeight:)",
             "children": [
@@ -17669,8 +18114,9 @@
           "Custom",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)UIViewController",
+        "superclassUsr": "c:@M@Qualtrics@objc(cs)QualtricsEmbeddedFeedbackViewControllerBase",
         "superclassNames": [
+          "Qualtrics.QualtricsEmbeddedFeedbackViewControllerBase",
           "UIKit.UIViewController",
           "UIKit.UIResponder",
           "ObjectiveC.NSObject"
@@ -17727,17 +18173,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -53224,6 +53670,24 @@
           },
           {
             "kind": "Function",
+            "name": "resetViewElements",
+            "printedName": "resetViewElements()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC05resetF8ElementsyyF",
+            "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC05resetF8ElementsyyF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "addScrollViewToDialogView",
             "printedName": "addScrollViewToDialogView()",
             "children": [
@@ -56823,17 +57287,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -65100,17 +65564,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -67563,6 +68027,27 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "resetViewElements",
+            "printedName": "resetViewElements()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC05resetD8ElementsyyF",
+            "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC05resetD8ElementsyyF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -91432,6 +91917,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITraitChangeObservable",
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
@@ -94115,7 +94607,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/RadioButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 4972,
+      "offset": 4679,
       "length": 5,
       "value": "false"
     },
@@ -94129,7 +94621,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsEmbeddedFeedbackViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4657,
+      "offset": 4997,
       "length": 5,
       "value": "false"
     },
@@ -94143,7 +94635,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsEmbeddedFeedbackFollowupQuestionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20801,
+      "offset": 22910,
       "length": 5,
       "value": "false"
     },
@@ -94423,35 +94915,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3400,
+      "offset": 3573,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8378,
+      "offset": 8551,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9926,
+      "offset": 10099,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14673,
+      "offset": 14846,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16106,
+      "offset": 16279,
       "length": 5,
       "value": "false"
     },
@@ -94759,21 +95251,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/QualtricsEmbeddedFeedbackView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4389,
+      "offset": 4587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/QualtricsEmbeddedFeedbackView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5638,
+      "offset": 5836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/QualtricsEmbeddedFeedbackView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11435,
+      "offset": 11633,
       "length": 5,
       "value": "false"
     },
@@ -94787,21 +95279,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 22800,
+      "offset": 22298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 23932,
+      "offset": 23430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 25870,
+      "offset": 25368,
       "length": 5,
       "value": "false"
     },
