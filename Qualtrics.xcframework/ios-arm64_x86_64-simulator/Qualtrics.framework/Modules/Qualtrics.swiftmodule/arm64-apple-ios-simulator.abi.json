@@ -95297,7 +95297,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsEmbeddedFeedbackViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4997,
+      "offset": 5053,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsEmbeddedFeedbackViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5405,
       "length": 5,
       "value": "false"
     },
@@ -95829,28 +95836,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackButtons\/EmbeddedFeedbackRatingsButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 4177,
+      "offset": 4601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackButtons\/EmbeddedFeedbackRatingsButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 5187,
+      "offset": 5611,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackButtons\/EmbeddedFeedbackRatingsButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 6217,
+      "offset": 6641,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackButtons\/EmbeddedFeedbackRatingsButton.swift",
       "kind": "BooleanLiteral",
-      "offset": 7241,
+      "offset": 7665,
       "length": 5,
       "value": "false"
     },
