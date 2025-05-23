@@ -12427,6 +12427,166 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "SortedAccessibilityElement",
+        "printedName": "SortedAccessibilityElement",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "element",
+            "printedName": "element",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics26SortedAccessibilityElementV7elementSo8NSObjectCvp",
+            "mangledName": "$s9Qualtrics26SortedAccessibilityElementV7elementSo8NSObjectCvp",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSObject",
+                    "printedName": "ObjectiveC.NSObject",
+                    "usr": "c:objc(cs)NSObject"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics26SortedAccessibilityElementV7elementSo8NSObjectCvg",
+                "mangledName": "$s9Qualtrics26SortedAccessibilityElementV7elementSo8NSObjectCvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sortPriority",
+            "printedName": "sortPriority",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics26SortedAccessibilityElementV12sortPrioritySivp",
+            "mangledName": "$s9Qualtrics26SortedAccessibilityElementV12sortPrioritySivp",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics26SortedAccessibilityElementV12sortPrioritySivg",
+                "mangledName": "$s9Qualtrics26SortedAccessibilityElementV12sortPrioritySivg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(element:sortPriority:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SortedAccessibilityElement",
+                "printedName": "Qualtrics.SortedAccessibilityElement",
+                "usr": "s:9Qualtrics26SortedAccessibilityElementV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9Qualtrics26SortedAccessibilityElementV7element12sortPriorityACSo8NSObjectC_Sitcfc",
+            "mangledName": "$s9Qualtrics26SortedAccessibilityElementV7element12sortPriorityACSo8NSObjectC_Sitcfc",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9Qualtrics26SortedAccessibilityElementV",
+        "mangledName": "$s9Qualtrics26SortedAccessibilityElementV",
+        "moduleName": "Qualtrics",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Qualtrics",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "TargetingResultError",
         "printedName": "TargetingResultError",
         "children": [
@@ -51860,32 +52020,25 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[ObjectiveC.NSObject?]",
+                "printedName": "[Qualtrics.SortedAccessibilityElement]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "ObjectiveC.NSObject?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSObject",
-                        "printedName": "ObjectiveC.NSObject",
-                        "usr": "c:objc(cs)NSObject"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "SortedAccessibilityElement",
+                    "printedName": "Qualtrics.SortedAccessibilityElement",
+                    "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSaySo8NSObjectCSgGvp",
-            "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSaySo8NSObjectCSgGvp",
+            "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvp",
+            "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvp",
             "moduleName": "Qualtrics",
             "isOpen": true,
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -51900,29 +52053,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ObjectiveC.NSObject?]",
+                    "printedName": "[Qualtrics.SortedAccessibilityElement]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "ObjectiveC.NSObject?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObject",
-                            "printedName": "ObjectiveC.NSObject",
-                            "usr": "c:objc(cs)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "SortedAccessibilityElement",
+                        "printedName": "Qualtrics.SortedAccessibilityElement",
+                        "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSaySo8NSObjectCSgGvg",
-                "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSaySo8NSObjectCSgGvg",
+                "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvg",
+                "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvg",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -51944,29 +52089,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ObjectiveC.NSObject?]",
+                    "printedName": "[Qualtrics.SortedAccessibilityElement]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "ObjectiveC.NSObject?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObject",
-                            "printedName": "ObjectiveC.NSObject",
-                            "usr": "c:objc(cs)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "SortedAccessibilityElement",
+                        "printedName": "Qualtrics.SortedAccessibilityElement",
+                        "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSaySo8NSObjectCSgGvs",
-                "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSaySo8NSObjectCSgGvs",
+                "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvs",
+                "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvs",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -51987,8 +52124,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSaySo8NSObjectCSgGvM",
-                "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSaySo8NSObjectCSgGvM",
+                "usr": "s:9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvM",
+                "mangledName": "$s9Qualtrics36EmbeddedFeedbackFollowupQuestionViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvM",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -68077,32 +68214,25 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[ObjectiveC.NSObject?]",
+                "printedName": "[Qualtrics.SortedAccessibilityElement]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "ObjectiveC.NSObject?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSObject",
-                        "printedName": "ObjectiveC.NSObject",
-                        "usr": "c:objc(cs)NSObject"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "SortedAccessibilityElement",
+                    "printedName": "Qualtrics.SortedAccessibilityElement",
+                    "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSaySo8NSObjectCSgGvp",
-            "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSaySo8NSObjectCSgGvp",
+            "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvp",
+            "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvp",
             "moduleName": "Qualtrics",
             "isOpen": true,
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl",
               "RawDocComment"
@@ -68118,29 +68248,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ObjectiveC.NSObject?]",
+                    "printedName": "[Qualtrics.SortedAccessibilityElement]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "ObjectiveC.NSObject?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObject",
-                            "printedName": "ObjectiveC.NSObject",
-                            "usr": "c:objc(cs)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "SortedAccessibilityElement",
+                        "printedName": "Qualtrics.SortedAccessibilityElement",
+                        "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSaySo8NSObjectCSgGvg",
-                "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSaySo8NSObjectCSgGvg",
+                "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvg",
+                "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvg",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -68162,29 +68284,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ObjectiveC.NSObject?]",
+                    "printedName": "[Qualtrics.SortedAccessibilityElement]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "ObjectiveC.NSObject?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObject",
-                            "printedName": "ObjectiveC.NSObject",
-                            "usr": "c:objc(cs)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "SortedAccessibilityElement",
+                        "printedName": "Qualtrics.SortedAccessibilityElement",
+                        "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSaySo8NSObjectCSgGvs",
-                "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSaySo8NSObjectCSgGvs",
+                "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvs",
+                "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvs",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -68205,8 +68319,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSaySo8NSObjectCSgGvM",
-                "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSaySo8NSObjectCSgGvM",
+                "usr": "s:9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvM",
+                "mangledName": "$s9Qualtrics0A20EmbeddedFeedbackViewC18accessibleElementsSayAA26SortedAccessibilityElementVGvM",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -95318,7 +95432,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsEmbeddedFeedbackFollowupQuestionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 22910,
+      "offset": 23000,
       "length": 5,
       "value": "false"
     },
@@ -95598,35 +95712,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3573,
+      "offset": 3545,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8551,
+      "offset": 8882,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10099,
+      "offset": 10611,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14846,
+      "offset": 15710,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16279,
+      "offset": 17143,
       "length": 5,
       "value": "false"
     },
@@ -95948,21 +96062,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/QualtricsEmbeddedFeedbackView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4587,
+      "offset": 4559,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/QualtricsEmbeddedFeedbackView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5836,
+      "offset": 5976,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/QualtricsEmbeddedFeedbackView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11633,
+      "offset": 12121,
       "length": 5,
       "value": "false"
     },
