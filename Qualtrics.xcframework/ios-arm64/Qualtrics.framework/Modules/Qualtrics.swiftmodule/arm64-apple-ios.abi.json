@@ -71451,11 +71451,10 @@
             "moduleName": "Qualtrics",
             "isOpen": true,
             "declAttributes": [
-              "HasStorage",
+              "ProjectedValueProperty",
+              "Custom",
               "RawDocComment"
             ],
-            "fixedbinaryorder": 5,
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -71489,9 +71488,6 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -71531,9 +71527,6 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -71553,12 +71546,141 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "$passingCSTActionSets",
+            "printedName": "$passingCSTActionSets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CriticalSection",
+                "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.CSTActionSet]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Qualtrics.CSTActionSet]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CSTActionSet",
+                        "printedName": "Qualtrics.CSTActionSet",
+                        "usr": "s:9Qualtrics12CSTActionSetV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:9Qualtrics15CriticalSectionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC21$passingCSTActionSetsAA15CriticalSectionCySDySSAA0G3SetVGGvp",
+            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC21$passingCSTActionSetsAA15CriticalSectionCySDySSAA0G3SetVGGvp",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CriticalSection",
+                    "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.CSTActionSet]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Qualtrics.CSTActionSet]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CSTActionSet",
+                            "printedName": "Qualtrics.CSTActionSet",
+                            "usr": "s:9Qualtrics12CSTActionSetV"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:9Qualtrics15CriticalSectionC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics24ClientSideInterceptUtilsC21$passingCSTActionSetsAA15CriticalSectionCySDySSAA0G3SetVGGvg",
+                "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC21$passingCSTActionSetsAA15CriticalSectionCySDySSAA0G3SetVGGvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_passingCSTActionSets",
+            "printedName": "_passingCSTActionSets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CriticalSection",
+                "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.CSTActionSet]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Qualtrics.CSTActionSet]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CSTActionSet",
+                        "printedName": "Qualtrics.CSTActionSet",
+                        "usr": "s:9Qualtrics12CSTActionSetV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:9Qualtrics15CriticalSectionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC21_passingCSTActionSets021_9AFA2E2ACDE05F0015E6J10B4A5C8CD2DLLAA15CriticalSectionCySDySSAA0G3SetVGGvp",
+            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC21_passingCSTActionSets021_9AFA2E2ACDE05F0015E6J10B4A5C8CD2DLLAA15CriticalSectionCySDySSAA0G3SetVGGvp",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 5,
+            "hasStorage": true
           },
           {
             "kind": "Var",
@@ -71600,11 +71722,10 @@
             "moduleName": "Qualtrics",
             "isOpen": true,
             "declAttributes": [
-              "HasStorage",
+              "ProjectedValueProperty",
+              "Custom",
               "RawDocComment"
             ],
-            "fixedbinaryorder": 6,
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -71646,9 +71767,6 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -71696,9 +71814,6 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -71718,12 +71833,165 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "$passingActionSets",
+            "printedName": "$passingActionSets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CriticalSection",
+                "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.ActionSet?]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Qualtrics.ActionSet?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Qualtrics.ActionSet?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ActionSet",
+                            "printedName": "Qualtrics.ActionSet",
+                            "usr": "s:9Qualtrics9ActionSetC"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:9Qualtrics15CriticalSectionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC18$passingActionSetsAA15CriticalSectionCySDySSAA0G3SetCSgGGvp",
+            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC18$passingActionSetsAA15CriticalSectionCySDySSAA0G3SetCSgGGvp",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CriticalSection",
+                    "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.ActionSet?]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Qualtrics.ActionSet?]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Qualtrics.ActionSet?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ActionSet",
+                                "printedName": "Qualtrics.ActionSet",
+                                "usr": "s:9Qualtrics9ActionSetC"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:9Qualtrics15CriticalSectionC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics24ClientSideInterceptUtilsC18$passingActionSetsAA15CriticalSectionCySDySSAA0G3SetCSgGGvg",
+                "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC18$passingActionSetsAA15CriticalSectionCySDySSAA0G3SetCSgGGvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_passingActionSets",
+            "printedName": "_passingActionSets",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CriticalSection",
+                "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.ActionSet?]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Qualtrics.ActionSet?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Qualtrics.ActionSet?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ActionSet",
+                            "printedName": "Qualtrics.ActionSet",
+                            "usr": "s:9Qualtrics9ActionSetC"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:9Qualtrics15CriticalSectionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC18_passingActionSets021_9AFA2E2ACDE05F0015E6J10B4A5C8CD2DLLAA15CriticalSectionCySDySSAA0G3SetCSgGGvp",
+            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC18_passingActionSets021_9AFA2E2ACDE05F0015E6J10B4A5C8CD2DLLAA15CriticalSectionCySDySSAA0G3SetCSgGGvp",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 6,
+            "hasStorage": true
           },
           {
             "kind": "Var",
@@ -71757,10 +72025,9 @@
             "moduleName": "Qualtrics",
             "isOpen": true,
             "declAttributes": [
-              "HasStorage"
+              "ProjectedValueProperty",
+              "Custom"
             ],
-            "fixedbinaryorder": 7,
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -71794,9 +72061,6 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -71836,9 +72100,6 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -71858,12 +72119,141 @@
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "$passingActionSetXmdAttributes",
+            "printedName": "$passingActionSetXmdAttributes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CriticalSection",
+                "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.XmdAttributes]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Qualtrics.XmdAttributes]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "XmdAttributes",
+                        "printedName": "Qualtrics.XmdAttributes",
+                        "usr": "s:9Qualtrics13XmdAttributesV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:9Qualtrics15CriticalSectionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC30$passingActionSetXmdAttributesAA15CriticalSectionCySDySSAA0iJ0VGGvp",
+            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC30$passingActionSetXmdAttributesAA15CriticalSectionCySDySSAA0iJ0VGGvp",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CriticalSection",
+                    "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.XmdAttributes]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Qualtrics.XmdAttributes]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "XmdAttributes",
+                            "printedName": "Qualtrics.XmdAttributes",
+                            "usr": "s:9Qualtrics13XmdAttributesV"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:9Qualtrics15CriticalSectionC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics24ClientSideInterceptUtilsC30$passingActionSetXmdAttributesAA15CriticalSectionCySDySSAA0iJ0VGGvg",
+                "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC30$passingActionSetXmdAttributesAA15CriticalSectionCySDySSAA0iJ0VGGvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_passingActionSetXmdAttributes",
+            "printedName": "_passingActionSetXmdAttributes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CriticalSection",
+                "printedName": "Qualtrics.CriticalSection<[Swift.String : Qualtrics.XmdAttributes]>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Qualtrics.XmdAttributes]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "XmdAttributes",
+                        "printedName": "Qualtrics.XmdAttributes",
+                        "usr": "s:9Qualtrics13XmdAttributesV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:9Qualtrics15CriticalSectionC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics24ClientSideInterceptUtilsC30_passingActionSetXmdAttributes021_9AFA2E2ACDE05F0015E6L10B4A5C8CD2DLLAA15CriticalSectionCySDySSAA0iJ0VGGvp",
+            "mangledName": "$s9Qualtrics24ClientSideInterceptUtilsC30_passingActionSetXmdAttributes021_9AFA2E2ACDE05F0015E6L10B4A5C8CD2DLLAA15CriticalSectionCySDySSAA0iJ0VGGvp",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 7,
+            "hasStorage": true
           },
           {
             "kind": "Var",
@@ -96090,21 +96480,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 22332,
+      "offset": 22383,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 23464,
+      "offset": 23515,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 25402,
+      "offset": 25453,
       "length": 5,
       "value": "false"
     },
