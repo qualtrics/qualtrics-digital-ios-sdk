@@ -56233,29 +56233,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[ObjectiveC.NSObject?]",
+                "printedName": "[Qualtrics.SortedAccessibilityElement]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "ObjectiveC.NSObject?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSObject",
-                        "printedName": "ObjectiveC.NSObject",
-                        "usr": "c:objc(cs)NSObject"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "SortedAccessibilityElement",
+                    "printedName": "Qualtrics.SortedAccessibilityElement",
+                    "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9Qualtrics0A21PopOverViewControllerC18accessibleElementsSaySo8NSObjectCSgGvp",
-            "mangledName": "$s9Qualtrics0A21PopOverViewControllerC18accessibleElementsSaySo8NSObjectCSgGvp",
+            "usr": "s:9Qualtrics0A21PopOverViewControllerC18accessibleElementsSayAA26SortedAccessibilityElementVGvp",
+            "mangledName": "$s9Qualtrics0A21PopOverViewControllerC18accessibleElementsSayAA26SortedAccessibilityElementVGvp",
             "moduleName": "Qualtrics",
             "isOpen": true,
             "declAttributes": [
@@ -56274,29 +56266,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ObjectiveC.NSObject?]",
+                    "printedName": "[Qualtrics.SortedAccessibilityElement]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "ObjectiveC.NSObject?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObject",
-                            "printedName": "ObjectiveC.NSObject",
-                            "usr": "c:objc(cs)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "SortedAccessibilityElement",
+                        "printedName": "Qualtrics.SortedAccessibilityElement",
+                        "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics0A21PopOverViewControllerC18accessibleElementsSaySo8NSObjectCSgGvg",
-                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC18accessibleElementsSaySo8NSObjectCSgGvg",
+                "usr": "s:9Qualtrics0A21PopOverViewControllerC18accessibleElementsSayAA26SortedAccessibilityElementVGvg",
+                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC18accessibleElementsSayAA26SortedAccessibilityElementVGvg",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -56315,29 +56299,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[ObjectiveC.NSObject?]",
+                    "printedName": "[Qualtrics.SortedAccessibilityElement]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "ObjectiveC.NSObject?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSObject",
-                            "printedName": "ObjectiveC.NSObject",
-                            "usr": "c:objc(cs)NSObject"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "SortedAccessibilityElement",
+                        "printedName": "Qualtrics.SortedAccessibilityElement",
+                        "usr": "s:9Qualtrics26SortedAccessibilityElementV"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics0A21PopOverViewControllerC18accessibleElementsSaySo8NSObjectCSgGvs",
-                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC18accessibleElementsSaySo8NSObjectCSgGvs",
+                "usr": "s:9Qualtrics0A21PopOverViewControllerC18accessibleElementsSayAA26SortedAccessibilityElementVGvs",
+                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC18accessibleElementsSayAA26SortedAccessibilityElementVGvs",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -56355,8 +56331,120 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9Qualtrics0A21PopOverViewControllerC18accessibleElementsSaySo8NSObjectCSgGvM",
-                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC18accessibleElementsSaySo8NSObjectCSgGvM",
+                "usr": "s:9Qualtrics0A21PopOverViewControllerC18accessibleElementsSayAA26SortedAccessibilityElementVGvM",
+                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC18accessibleElementsSayAA26SortedAccessibilityElementVGvM",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "popOverTriggerElement",
+            "printedName": "popOverTriggerElement",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics0A21PopOverViewControllerC03popC14TriggerElementypSgvp",
+            "mangledName": "$s9Qualtrics0A21PopOverViewControllerC03popC14TriggerElementypSgvp",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom"
+            ],
+            "fixedbinaryorder": 23,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A21PopOverViewControllerC03popC14TriggerElementypSgvg",
+                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC03popC14TriggerElementypSgvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A21PopOverViewControllerC03popC14TriggerElementypSgvs",
+                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC03popC14TriggerElementypSgvs",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A21PopOverViewControllerC03popC14TriggerElementypSgvM",
+                "mangledName": "$s9Qualtrics0A21PopOverViewControllerC03popC14TriggerElementypSgvM",
                 "moduleName": "Qualtrics",
                 "implicit": true,
                 "isOpen": true,
@@ -57607,6 +57695,32 @@
             "overriding": true,
             "isOpen": true,
             "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Qualtrics@objc(cs)QualtricsPopOverViewController(im)viewDidLoad",
+            "mangledName": "$s9Qualtrics0A21PopOverViewControllerC11viewDidLoadyyF",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLoad",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -65443,6 +65557,55 @@
                   "Final"
                 ],
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonAcessibilityLabel",
+            "printedName": "closeButtonAcessibilityLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics0A20SurveyViewControllerC28closeButtonAcessibilityLabelSSvp",
+            "mangledName": "$s9Qualtrics0A20SurveyViewControllerC28closeButtonAcessibilityLabelSSvp",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "Custom"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A20SurveyViewControllerC28closeButtonAcessibilityLabelSSvg",
+                "mangledName": "$s9Qualtrics0A20SurveyViewControllerC28closeButtonAcessibilityLabelSSvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
@@ -96109,28 +96272,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8882,
+      "offset": 8862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10611,
+      "offset": 10591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15710,
+      "offset": 15690,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17143,
+      "offset": 17123,
       "length": 5,
       "value": "false"
     },
@@ -96235,42 +96398,42 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsPopOverViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1321,
+      "offset": 1374,
       "length": 10,
       "value": "\"negative\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsPopOverViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1366,
+      "offset": 1419,
       "length": 9,
       "value": "\"dismiss\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsPopOverViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1404,
+      "offset": 1457,
       "length": 10,
       "value": "\"positive\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsPopOverViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1448,
+      "offset": 1501,
       "length": 8,
       "value": "\"target\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsPopOverViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1490,
+      "offset": 1543,
       "length": 12,
       "value": "\"appreviews\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsPopOverViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24540,
+      "offset": 26238,
       "length": 5,
       "value": "false"
     },
@@ -96402,22 +96565,29 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 875,
+      "length": 7,
+      "value": "\"Close\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 991,
+      "offset": 1038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1417,
+      "offset": 1464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1983,
+      "offset": 2030,
       "length": 5,
       "value": "false"
     },
