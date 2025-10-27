@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-bare-slash-regex -module-name Qualtrics
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Qualtrics
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Combine
 import CommonCrypto
 import DeveloperToolsSupport
@@ -57,9 +58,9 @@ import _SwiftConcurrencyShims
   @objc public func initialize(brandId: Swift.String, zoneId: Swift.String, interceptId: Swift.String, completion: ((_ InitializationResult: Qualtrics.InitializationResult) -> Swift.Void)? = nil)
   @objc public func initializeProject(brandId: Swift.String, projectId: Swift.String, extRefId: Swift.String? = nil, completion: ((_ InitializationResults: [Swift.String : Qualtrics.InitializationResult]) -> Swift.Void)? = nil)
   @available(*, deprecated, message: "This is being removed; please migrate to evaluateProject or evaluateIntercept.")
-  @objc public func evaluateTargetingLogic(completion: @escaping ((_ targetingResult: Qualtrics.TargetingResult) -> Swift.Void))
-  @objc public func evaluateProject(completion: @escaping ((_ targetingResults: [Swift.String : Qualtrics.TargetingResult]) -> Swift.Void))
-  @objc public func evaluateIntercept(for interceptId: Swift.String, completion: @escaping ((_ targetingResult: Qualtrics.TargetingResult) -> Swift.Void))
+  @objc public func evaluateTargetingLogic(completion: @escaping (_ targetingResult: Qualtrics.TargetingResult) -> Swift.Void)
+  @objc public func evaluateProject(completion: @escaping (_ targetingResults: [Swift.String : Qualtrics.TargetingResult]) -> Swift.Void)
+  @objc public func evaluateIntercept(for interceptId: Swift.String, completion: @escaping (_ targetingResult: Qualtrics.TargetingResult) -> Swift.Void)
   @objc public func handleLocalNotification(response: UserNotifications.UNNotificationResponse, displayOn viewController: UIKit.UIViewController) -> Swift.Bool
   @objc public func handleLocalNotification(_ notification: UIKit.UILocalNotification, displayOn viewController: UIKit.UIViewController) -> Swift.Bool
   @objc public func display(viewController: UIKit.UIViewController, autoCloseSurvey: Foundation.NSNumber = false) -> Swift.Bool
@@ -202,14 +203,14 @@ public enum QualtricsDefaultFonts {
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class QualtricsSurveyViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
-  @objc @_Concurrency.MainActor(unsafe) public init(url: Swift.String, autoCloseSurvey: Foundation.NSNumber? = false)
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class QualtricsSurveyViewController : UIKit.UIViewController, WebKit.WKScriptMessageHandler, WebKit.WKUIDelegate {
+  @objc @_Concurrency.MainActor @preconcurrency public init(url: Swift.String, autoCloseSurvey: Foundation.NSNumber? = false)
   @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc final public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
-  @_Concurrency.MainActor(unsafe) @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor @preconcurrency @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }
 @_hasMissingDesignatedInitializers @objc public class InitializationResult : ObjectiveC.NSObject {
   @objc public func getMessage() -> Swift.String?
