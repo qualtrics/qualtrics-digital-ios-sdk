@@ -99561,28 +99561,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8862,
+      "offset": 8926,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10591,
+      "offset": 10655,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15690,
+      "offset": 15754,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/EmbeddedFeedbackFollowupQuestionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17123,
+      "offset": 17187,
       "length": 5,
       "value": "false"
     },
@@ -99722,7 +99722,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsPopOverViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 26238,
+      "offset": 26289,
       "length": 5,
       "value": "false"
     },
@@ -100338,7 +100338,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Views\/QualtricsEmbeddedFeedbackView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12121,
+      "offset": 12175,
       "length": 5,
       "value": "false"
     },
