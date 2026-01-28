@@ -99463,14 +99463,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Managers\/InterceptManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 26275,
+      "offset": 26519,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Managers\/InterceptManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 27378,
+      "offset": 27622,
       "length": 5,
       "value": "false"
     },
@@ -100394,21 +100394,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 22545,
+      "offset": 22651,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 23677,
+      "offset": 23783,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Utils\/ClientSideInterceptUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 25615,
+      "offset": 25721,
       "length": 5,
       "value": "false"
     },
