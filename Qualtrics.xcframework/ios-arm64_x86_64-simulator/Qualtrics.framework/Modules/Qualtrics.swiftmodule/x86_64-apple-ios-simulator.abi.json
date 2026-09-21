@@ -59745,6 +59745,33 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "viewDidLayoutSubviews",
+            "printedName": "viewDidLayoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Qualtrics@objc(cs)QualtricsPopOverViewController(im)viewDidLayoutSubviews",
+            "mangledName": "$s9Qualtrics0A21PopOverViewControllerC21viewDidLayoutSubviewsyyF",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidLayoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(nibName:bundle:)",
@@ -68216,6 +68243,43 @@
               "Preconcurrency",
               "Custom",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shouldLoadInCurrentWebView",
+            "printedName": "shouldLoadInCurrentWebView(targetFrameIsMainFrame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A20SurveyViewControllerC022shouldLoadInCurrentWebC0017targetFrameIsMainK0S2bSg_tF",
+            "mangledName": "$s9Qualtrics0A20SurveyViewControllerC022shouldLoadInCurrentWebC0017targetFrameIsMainK0S2bSg_tF",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final"
             ],
             "funcSelfKind": "NonMutating"
           },
