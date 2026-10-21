@@ -77,11 +77,22 @@ import _SwiftConcurrencyShims
   @objc public func setCreativeTheme(to qualtricsTheme: QualtricsTheme)
   @objc deinit
 }
+@objc public enum QualtricsCloseButtonPosition : Swift.Int {
+  case leading
+  case trailing
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers @objc public class QualtricsWebviewTheme : ObjectiveC.NSObject {
   public func getCloseButtonImage() -> UIKit.UIImage?
   public func setCloseButtonImage(closeButtonImage: UIKit.UIImage?)
   public func getTopBarBackgroundColor() -> UIKit.UIColor
   public func setTopBarBackgroundColor(topBarBackgroundColor: UIKit.UIColor)
+  public func getCloseButtonPosition() -> QualtricsCloseButtonPosition?
+  public func setCloseButtonPosition(closeButtonPosition: QualtricsCloseButtonPosition?)
   @objc deinit
 }
 @objc public class MultipleChoiceTheme : ObjectiveC.NSObject, Foundation.ObservableObject {
@@ -208,6 +219,7 @@ public enum QualtricsDefaultFonts {
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLayoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor @preconcurrency @objc final public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
@@ -272,6 +284,9 @@ public enum QualtricsDefaultFonts {
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
+extension QualtricsCloseButtonPosition : Swift.Equatable {}
+extension QualtricsCloseButtonPosition : Swift.Hashable {}
+extension QualtricsCloseButtonPosition : Swift.RawRepresentable {}
 extension CreativeType : Swift.Equatable {}
 extension CreativeType : Swift.Hashable {}
 extension CreativeType : Swift.RawRepresentable {}

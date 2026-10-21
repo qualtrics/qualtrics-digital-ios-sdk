@@ -4367,6 +4367,229 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "QualtricsCloseButtonPosition",
+        "printedName": "QualtricsCloseButtonPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "leading",
+            "printedName": "leading",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Qualtrics.QualtricsCloseButtonPosition.Type) -> Qualtrics.QualtricsCloseButtonPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsCloseButtonPosition",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                    "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QualtricsCloseButtonPosition",
+                        "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                        "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition@QualtricsCloseButtonPositionLeading",
+            "mangledName": "$s9Qualtrics0A19CloseButtonPositionO7leadingyA2CmF",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "trailing",
+            "printedName": "trailing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Qualtrics.QualtricsCloseButtonPosition.Type) -> Qualtrics.QualtricsCloseButtonPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsCloseButtonPosition",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                    "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QualtricsCloseButtonPosition",
+                        "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                        "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition@QualtricsCloseButtonPositionTrailing",
+            "mangledName": "$s9Qualtrics0A19CloseButtonPositionO8trailingyA2CmF",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsCloseButtonPosition",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                    "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9Qualtrics0A19CloseButtonPositionO8rawValueACSgSi_tcfc",
+            "mangledName": "$s9Qualtrics0A19CloseButtonPositionO8rawValueACSgSi_tcfc",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics0A19CloseButtonPositionO8rawValueSivp",
+            "mangledName": "$s9Qualtrics0A19CloseButtonPositionO8rawValueSivp",
+            "moduleName": "Qualtrics",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A19CloseButtonPositionO8rawValueSivg",
+                "mangledName": "$s9Qualtrics0A19CloseButtonPositionO8rawValueSivg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition",
+        "mangledName": "$s9Qualtrics0A19CloseButtonPositionO",
+        "moduleName": "Qualtrics",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "QualtricsWebviewTheme",
         "printedName": "QualtricsWebviewTheme",
         "children": [
@@ -4572,9 +4795,122 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "closeButtonPosition",
+            "printedName": "closeButtonPosition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsCloseButtonPosition",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                    "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics0A12WebviewThemeC19closeButtonPositionAA0a5CloseeF0OSgvp",
+            "mangledName": "$s9Qualtrics0A12WebviewThemeC19closeButtonPositionAA0a5CloseeF0OSgvp",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QualtricsCloseButtonPosition",
+                        "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                        "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A12WebviewThemeC19closeButtonPositionAA0a5CloseeF0OSgvg",
+                "mangledName": "$s9Qualtrics0A12WebviewThemeC19closeButtonPositionAA0a5CloseeF0OSgvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QualtricsCloseButtonPosition",
+                        "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                        "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A12WebviewThemeC19closeButtonPositionAA0a5CloseeF0OSgvs",
+                "mangledName": "$s9Qualtrics0A12WebviewThemeC19closeButtonPositionAA0a5CloseeF0OSgvs",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A12WebviewThemeC19closeButtonPositionAA0a5CloseeF0OSgvM",
+                "mangledName": "$s9Qualtrics0A12WebviewThemeC19closeButtonPositionAA0a5CloseeF0OSgvM",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(closeButtonImage:topBarBackgroundColor:)",
+            "printedName": "init(closeButtonImage:topBarBackgroundColor:closeButtonPosition:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4601,11 +4937,26 @@
                 "name": "UIColor",
                 "printedName": "UIKit.UIColor",
                 "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsCloseButtonPosition",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                    "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9Qualtrics0A12WebviewThemeC16closeButtonImage21topBarBackgroundColorACSo7UIImageCSg_So7UIColorCtcfc",
-            "mangledName": "$s9Qualtrics0A12WebviewThemeC16closeButtonImage21topBarBackgroundColorACSo7UIImageCSg_So7UIColorCtcfc",
+            "usr": "s:9Qualtrics0A12WebviewThemeC16closeButtonImage21topBarBackgroundColor0dE8PositionACSo7UIImageCSg_So7UIColorCAA0a5CloseeK0OSgtcfc",
+            "mangledName": "$s9Qualtrics0A12WebviewThemeC16closeButtonImage21topBarBackgroundColor0dE8PositionACSo7UIImageCSg_So7UIColorCAA0a5CloseeK0OSgtcfc",
             "moduleName": "Qualtrics",
             "init_kind": "Designated"
           },
@@ -4716,6 +5067,71 @@
             "declKind": "Func",
             "usr": "s:9Qualtrics0A12WebviewThemeC24setTopBarBackgroundColor03topfgH0ySo7UIColorC_tF",
             "mangledName": "$s9Qualtrics0A12WebviewThemeC24setTopBarBackgroundColor03topfgH0ySo7UIColorC_tF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCloseButtonPosition",
+            "printedName": "getCloseButtonPosition()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsCloseButtonPosition",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                    "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A12WebviewThemeC22getCloseButtonPositionAA0aefG0OSgyF",
+            "mangledName": "$s9Qualtrics0A12WebviewThemeC22getCloseButtonPositionAA0aefG0OSgyF",
+            "moduleName": "Qualtrics",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCloseButtonPosition",
+            "printedName": "setCloseButtonPosition(closeButtonPosition:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsCloseButtonPosition",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                    "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A12WebviewThemeC22setCloseButtonPosition05closefG0yAA0aefG0OSg_tF",
+            "mangledName": "$s9Qualtrics0A12WebviewThemeC22setCloseButtonPosition05closefG0yAA0aefG0OSg_tF",
             "moduleName": "Qualtrics",
             "isOpen": true,
             "declAttributes": [
@@ -67955,6 +68371,178 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "closeSurveyMessage",
+            "printedName": "closeSurveyMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics0A20SurveyViewControllerC05closeB7MessageSSvp",
+            "mangledName": "$s9Qualtrics0A20SurveyViewControllerC05closeB7MessageSSvp",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A20SurveyViewControllerC05closeB7MessageSSvg",
+                "mangledName": "$s9Qualtrics0A20SurveyViewControllerC05closeB7MessageSSvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "closeButtonPosition",
+            "printedName": "closeButtonPosition",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QualtricsCloseButtonPosition",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                    "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Qualtrics0A20SurveyViewControllerC19closeButtonPositionAA0a5ClosefG0OSgvp",
+            "mangledName": "$s9Qualtrics0A20SurveyViewControllerC19closeButtonPositionAA0a5ClosefG0OSgvp",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QualtricsCloseButtonPosition",
+                        "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                        "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A20SurveyViewControllerC19closeButtonPositionAA0a5ClosefG0OSgvg",
+                "mangledName": "$s9Qualtrics0A20SurveyViewControllerC19closeButtonPositionAA0a5ClosefG0OSgvg",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Qualtrics.QualtricsCloseButtonPosition?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "QualtricsCloseButtonPosition",
+                        "printedName": "Qualtrics.QualtricsCloseButtonPosition",
+                        "usr": "c:@M@Qualtrics@E@QualtricsCloseButtonPosition"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A20SurveyViewControllerC19closeButtonPositionAA0a5ClosefG0OSgvs",
+                "mangledName": "$s9Qualtrics0A20SurveyViewControllerC19closeButtonPositionAA0a5ClosefG0OSgvs",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Qualtrics0A20SurveyViewControllerC19closeButtonPositionAA0a5ClosefG0OSgvM",
+                "mangledName": "$s9Qualtrics0A20SurveyViewControllerC19closeButtonPositionAA0a5ClosefG0OSgvM",
+                "moduleName": "Qualtrics",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(url:interceptID:creativeID:actionSetID:autoCloseSurvey:)",
@@ -68297,6 +68885,56 @@
             "declKind": "Func",
             "usr": "s:9Qualtrics0A20SurveyViewControllerC7rotatedyyF",
             "mangledName": "$s9Qualtrics0A20SurveyViewControllerC7rotatedyyF",
+            "moduleName": "Qualtrics",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLayoutSubviews",
+            "printedName": "viewDidLayoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Qualtrics@objc(cs)QualtricsSurveyViewController(im)viewDidLayoutSubviews",
+            "mangledName": "$s9Qualtrics0A20SurveyViewControllerC21viewDidLayoutSubviewsyyF",
+            "moduleName": "Qualtrics",
+            "overriding": true,
+            "objc_name": "viewDidLayoutSubviews",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Override"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeButtonOriginX",
+            "printedName": "closeButtonOriginX()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Qualtrics0A20SurveyViewControllerC18closeButtonOriginX14CoreFoundation7CGFloatVyF",
+            "mangledName": "$s9Qualtrics0A20SurveyViewControllerC18closeButtonOriginX12CoreGraphics7CGFloatVyF",
             "moduleName": "Qualtrics",
             "declAttributes": [
               "Preconcurrency",
@@ -98899,6 +99537,13 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/OtherSources\/Theming\/QualtricsWebviewTheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 445,
+      "length": 8,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/Shared\/Constants\/EmbeddedFeedbackUtilities.swift",
       "kind": "FloatLiteral",
       "offset": 259,
@@ -100594,22 +101239,29 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1000,
+      "length": 22,
+      "value": "\"QualtricsCloseSurvey\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1038,
+      "offset": 1237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1464,
+      "offset": 1663,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/QualtricsSIFramework\/ViewControllers\/QualtricsSurveyViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2030,
+      "offset": 2229,
       "length": 5,
       "value": "false"
     },

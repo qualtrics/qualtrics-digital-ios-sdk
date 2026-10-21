@@ -684,6 +684,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * 
 - (void)setCreativeThemeTo:(QualtricsTheme * _Nonnull)qualtricsTheme;
 @end
 
+/// Side of the survey webview’s top bar that shows the close button.
+/// <code>leading</code> and <code>trailing</code> follow the layout direction: <code>leading</code> is the left in left-to-right languages
+/// and the right in right-to-left languages.
+typedef SWIFT_ENUM(NSInteger, QualtricsCloseButtonPosition, open) {
+  QualtricsCloseButtonPositionLeading = 0,
+  QualtricsCloseButtonPositionTrailing = 1,
+};
+
 SWIFT_CLASS("_TtC9Qualtrics19QualtricsProperties")
 @interface QualtricsProperties : NSObject
 - (void)setStringWithString:(NSString * _Nonnull)string for:(NSString * _Nonnull)key;
@@ -707,6 +715,7 @@ SWIFT_CLASS("_TtC9Qualtrics29QualtricsSurveyViewController")
 - (nonnull instancetype)initWithUrl:(NSString * _Nonnull)url autoCloseSurvey:(NSNumber * _Nullable)autoCloseSurvey OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
+- (void)viewDidLayoutSubviews;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
@@ -1723,6 +1732,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Qualtrics * 
 - (void)setCreativeThemeTo:(QualtricsTheme * _Nonnull)qualtricsTheme;
 @end
 
+/// Side of the survey webview’s top bar that shows the close button.
+/// <code>leading</code> and <code>trailing</code> follow the layout direction: <code>leading</code> is the left in left-to-right languages
+/// and the right in right-to-left languages.
+typedef SWIFT_ENUM(NSInteger, QualtricsCloseButtonPosition, open) {
+  QualtricsCloseButtonPositionLeading = 0,
+  QualtricsCloseButtonPositionTrailing = 1,
+};
+
 SWIFT_CLASS("_TtC9Qualtrics19QualtricsProperties")
 @interface QualtricsProperties : NSObject
 - (void)setStringWithString:(NSString * _Nonnull)string for:(NSString * _Nonnull)key;
@@ -1746,6 +1763,7 @@ SWIFT_CLASS("_TtC9Qualtrics29QualtricsSurveyViewController")
 - (nonnull instancetype)initWithUrl:(NSString * _Nonnull)url autoCloseSurvey:(NSNumber * _Nullable)autoCloseSurvey OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
+- (void)viewDidLayoutSubviews;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
